@@ -1,105 +1,163 @@
 <template>
     <div>
-        <!-- Main navigation container -->
-<nav
-class="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
-data-twe-navbar-ref>
-<div class="flex w-full flex-wrap items-center justify-between px-3">
-  <div class="ms-2">
-    <a class="text-xl text-black dark:text-white" href="#">Navbar</a>
-  </div>
-  <!-- Hamburger button for mobile view -->
-  <button
-    class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-    type="button"
-    data-twe-collapse-init
-    data-twe-target="#navbarSupportedContent2"
-    aria-controls="navbarSupportedContent2"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <!-- Hamburger icon -->
-    <span
-      class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor">
-        <path
-          fill-rule="evenodd"
-          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-          clip-rule="evenodd" />
-      </svg>
-    </span>
-  </button>
-
-  <!-- Collapsible navbar container -->
-  <div
-    class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-    id="navbarSupportedContent2"
-    data-twe-collapse-item>
-    <!-- Left links -->
-    <ul
-      class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
-      data-twe-navbar-nav-ref>
-      <!-- Home link -->
-      <li
-        class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
-        data-twe-nav-item-ref>
-        <a
-          class="text-black dark:text-white lg:px-2"
-          aria-current="page"
-          href="#"
-          data-twe-nav-link-ref
-          >Home</a
-        >
-      </li>
-      <!-- Features link -->
-      <li
-        class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-        data-twe-nav-item-ref>
-        <a
-          class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-          href="#"
-          data-twe-nav-link-ref
-          >Features</a
-        >
-      </li>
-      <!-- Pricing link -->
-      <li
-        class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-        data-twe-nav-item-ref>
-        <a
-          class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-          href="#"
-          data-twe-nav-link-ref
-          >Pricing</a
-        >
-      </li>
-      <!-- Disabled link -->
-      <li
-        class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-        data-twe-nav-link-ref>
-        <a
-          class="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
-          >Disabled</a
-        >
-      </li>
-    </ul>
-  </div>
-</div>
-</nav>
+      <header class="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <NuxtLink to="/">
+                <figure>
+                  <img src="../assets/img/metodo-immobiliare-logo-white.png" alt="metodo-immobiliare-logo-white" width="150">
+                </figure>
+              </NuxtLink>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+              <li><a class="menu-link" href="#">Risultati</a></li>
+              <li><a class="menu-link" href="#">Servizi</a></li>
+              <li><a class="menu-link" href="#">Testimonianze</a></li>
+              <li><a class="menu-link" href="#">Chi Siamo</a></li>
+              <li>
+                <a href="#">
+                  <button class="btn btn-border">Blog</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <button class="btn btn-main">Consulenza gratuita</button>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </div>
 </template>
 
 <script>
-    import {
-  Collapse,
-  initTWE,
-} from "tw-elements";
 
-initTWE({ Collapse });
 </script>
 
 <style scoped>
+  .header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo a span {
+  color: #8739fa;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #151418;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+nav {
+
+  a.menu-link {
+    position: relative;
+  }
+
+  a.menu-link:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #fff;
+  }
+
+  a.menu-link:before {
+    left: 0;
+  }
+
+  a.menu-link:after {
+    right: 0;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  a.menu-link:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  a.menu-link:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+
+}
 </style>
