@@ -1,7 +1,7 @@
 <template>
     <div>
       <header class="header">
-        <div class="container">
+        <div class="container px-5 lg:px-0">
           <nav>
             <div class="logo">
               <NuxtLink to="/">
@@ -23,7 +23,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" class="last-button">
                   <button class="btn btn-main">Consulenza gratuita</button>
                 </a>
               </li>
@@ -39,7 +39,8 @@
 </script>
 
 <style scoped>
-  .header {
+
+.header {
   position: sticky;
   top: 0;
   width: 100%;
@@ -50,7 +51,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding-block: 30px;
 }
 
 .logo a {
@@ -76,6 +77,11 @@ nav {
   font-weight: 500;
   transition: 0.2s all ease-in-out;
   color: #fff;
+
+}
+
+.last-button {
+  padding-right: 0 !important;
 }
 
 .menu-icon {
