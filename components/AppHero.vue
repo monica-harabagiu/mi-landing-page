@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="text-center py-40 flex flex-col gap-7 relative">
+        <section class="text-center py-40 flex flex-col gap-7 relative container">
             <h1>
                 Scopri le strategie di <br>
                 <span>Web Marketing Immobiliare</span>
