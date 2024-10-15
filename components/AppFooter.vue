@@ -61,7 +61,7 @@
 
     footer {
 
-        position: fixed;
+        /* position: fixed; */
         bottom: 0;
         width: 100%;
         padding-block: 30px;
