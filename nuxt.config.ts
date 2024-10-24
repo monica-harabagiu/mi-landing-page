@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   css: [
     '@/assets/main.scss'
   ],
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },
   vite: {
     css: {
       preprocessorOptions: {
