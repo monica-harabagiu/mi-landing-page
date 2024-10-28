@@ -2,23 +2,35 @@
     <div>
         <div class="slide1 flex flex-col justify-center items-center text-white">
             <!-- <div class="frame"> -->
-                <svg class="title" width="100%" height="100%" preserveAspectratio="xMinYMin">
-                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">
-                        <tspan class="main-text">aumenta</tspan>
-                        <tspan class="sub-text" x="50%" y="70%">le acquisizioni e le vendite</tspan>
-                    </text>
-                </svg>
+            <svg class="title" width="100%" height="100%" preserveAspectratio="xMinYMin">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">
+                    <tspan class="main-text">aumenta</tspan>
+                    <tspan class="sub-text" x="50%" y="70%">le acquisizioni e le vendite</tspan>
+                </text>
+            </svg>
             <!-- </div> -->
         </div>
-        <div class="slide-finale flex justify-center items-center">
+        <div class="slide-finale flex flex-col justify-center items-center gap-8">
             <h2>Diventa il <span>leader</span> nella tua zona come:</h2>
+            <div class="logo-carousel flex gap-8">
+                <!-- <figure v-for="element in logos.companyLogos">
+                    <img :src="`/partnerLogos/${element.src}`" :alt="element.title" width="200">
+                </figure> -->
+                <figure v-for="element in 10" class="single-logo">
+                    <img src="/partnerLogos/concept-home.png" width="200">
+                </figure>
+            </div>
         </div>
     </div>
 </template>
 
 
 <script setup>
+    import { useLogosStore } from '~/store/companyLogos'
+    const logos = useLogosStore()
+
     const { $gsap, $ScrollTrigger } = useNuxtApp()
+
 
     onMounted(() => {
 
@@ -41,15 +53,6 @@
             },
             "-=0.5"
         )
-
-        // tl.to(
-        //     ".title text",
-        //     {
-        //         scale: 50,
-        //         ease: "sine.in",
-        //         transformOrigin: "center center",
-        //     }
-        // )
 
         tl.to(
             ".slide1",
@@ -85,9 +88,29 @@
             }
         )
         tl.from(
-            ".slide-finale h2",
+            ".slide-finale",
             {
                 opacity: 0,
+            }
+        )
+        
+
+        let logoCarousel = document.querySelector(".logo-carousel").offsetWidth;
+
+        $gsap.timeline({
+            repeat: -1,
+            defaults: {
+                ease: "none",
+            },
+        })
+        .fromTo(
+            ".single-logo",
+            {
+                x: (i, el) => innerWidth * i
+            },
+            {
+                x: (i, el, t) => -innerWidth * (t.length - i),
+                duration: d,
             }
         )
 
@@ -122,6 +145,7 @@
     .slide-finale {
         margin-top: -100vh;
         height: 100vh;
+        overflow: hidden;
         /* border: 2px solid green; */
 
         h2 {
@@ -131,5 +155,9 @@
                 color: #3DB8D8;
             }
         }
+    }
+
+    .logo-carousel {
+        width: max-content;
     }
 </style>
