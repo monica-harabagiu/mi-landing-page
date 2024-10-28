@@ -42,7 +42,7 @@
                 start: "center center",
                 endTrigger: ".slide-finale",
                 end: "bottom top",
-                markers: true,
+                // markers: true,
             },
         })
 
@@ -101,7 +101,7 @@
                 pin: true,
                 start: "bottom bottom",
                 end: "bottom bottom",
-                markers: true,
+                // markers: true,
             }
 
         })
