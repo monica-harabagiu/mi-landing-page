@@ -3,7 +3,7 @@
         <h5>Risultati</h5>
         <hr>
 
-        <div class="flex gap-52 justify-between">
+        <div class="flex gap-52 justify-between my-32">
 
             <div class="boxes basis-1/3 ms-20">
                 <div class="result-box">
@@ -87,9 +87,9 @@
 
 <style scoped>
 
-    .container {
+    /* .container {
         height: 100vh;
-    }
+    } */
 
     h5 {
         font-size: 20px;

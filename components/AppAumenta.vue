@@ -42,7 +42,7 @@
                 start: "center center",
                 endTrigger: ".slide-finale",
                 end: "bottom top",
-                // markers: true,
+                markers: true,
             },
         })
 
@@ -91,6 +91,25 @@
             ".slide-finale",
             {
                 opacity: 0,
+            }
+        )
+
+        let tl2 = $gsap.timeline({
+            scrollTrigger: {
+                trigger: ".slide-finale",
+                scrub: true,
+                pin: true,
+                start: "bottom bottom",
+                end: "bottom bottom",
+                markers: true,
+            }
+
+        })
+
+        tl2.to(
+            ".slide1",
+            {
+                display: "none"
             }
         )
         
