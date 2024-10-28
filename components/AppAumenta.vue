@@ -104,13 +104,13 @@
             },
         })
         .fromTo(
-            ".single-logo",
+            ".card",
             {
                 x: (i, el) => innerWidth * i
             },
             {
                 x: (i, el, t) => -innerWidth * (t.length - i),
-                duration: d,
+                duration: 10,
             }
         )
 
