@@ -143,7 +143,7 @@
     }
 
     .slide-finale {
-        margin-top: -100vh;
+        margin-top: -90vh;
         height: 100vh;
         overflow: hidden;
         /* border: 2px solid green; */
