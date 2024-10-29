@@ -15,6 +15,7 @@ import AppTestimonianze from './components/AppTestimonianze.vue';
     <AppTarget />
     <AppCeo />
     <AppTeam />
+    <AppCta />
     <AppFooter />
   </div>
 </template>
