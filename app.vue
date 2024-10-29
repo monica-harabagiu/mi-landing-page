@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AppServizi from './components/AppServizi.vue';
+import AppTestimonianze from './components/AppTestimonianze.vue';
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import AppServizi from './components/AppServizi.vue';
     <AppAumenta />
     <AppRisultati />
     <AppServizi />
+    <AppTestimonianze />
     <AppFooter />
   </div>
 </template>
