@@ -12,6 +12,7 @@ import AppTestimonianze from './components/AppTestimonianze.vue';
     <AppRisultati />
     <AppServizi />
     <AppTestimonianze />
+    <AppTarget />
     <AppFooter />
   </div>
 </template>
