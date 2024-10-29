@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+    <section class="container">
+        
         <h5>Servizi</h5>
         <hr>
 
@@ -41,7 +42,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <section class="container">
         <h5>Risultati</h5>
         <hr>
 
@@ -78,7 +78,7 @@
             </div>
 
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>

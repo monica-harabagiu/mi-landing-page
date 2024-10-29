@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <section>
         <div class="slide1 flex flex-col justify-center items-center text-white">
             <!-- <div class="frame"> -->
             <svg class="title" width="100%" height="100%" preserveAspectratio="xMinYMin">
@@ -21,7 +21,7 @@
                 </figure>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 
