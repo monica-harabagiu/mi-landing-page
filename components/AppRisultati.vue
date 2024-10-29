@@ -5,7 +5,7 @@
 
         <div class="flex gap-52 justify-between my-32">
 
-            <div class="boxes basis-1/3 ms-20">
+            <div class="boxes basis-1/3 ms-20 relative">
                 <div class="result-box">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@
                     </p>
                 </div>
     
-                <div class="result-box">
+                <div class="result-box top-[30px]">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -32,7 +32,7 @@
                     </p>
                 </div>
     
-                <div class="result-box">
+                <div class="result-box top-[60px]">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -45,7 +45,7 @@
                     </p>
                 </div>
     
-                <div class="result-box">
+                <div class="result-box top-[90px]">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -110,6 +110,7 @@
             border-radius: 20px;
             padding: 50px 30px;
             background-color: #00101C;
+            position: absolute;
 
             h6 {
                 font-size: 18px;
