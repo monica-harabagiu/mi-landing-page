@@ -13,6 +13,7 @@ import AppTestimonianze from './components/AppTestimonianze.vue';
     <AppServizi />
     <AppTestimonianze />
     <AppTarget />
+    <AppCeo />
     <AppFooter />
   </div>
 </template>
