@@ -1,12 +1,12 @@
 <template>
-    <section class="container">
+    <section id="results" class="container pt-14">
         <h5>Risultati</h5>
         <hr>
 
         <div class="flex gap-52 justify-between my-32">
 
             <div class="boxes basis-1/3 ms-20 relative">
-                <div class="result-box">
+                <div id="box-1"class="result-box">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -19,7 +19,7 @@
                     </p>
                 </div>
     
-                <div class="result-box top-[30px]">
+                <div id="box-2"class="result-box top-[30px]">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -32,7 +32,7 @@
                     </p>
                 </div>
     
-                <div class="result-box top-[60px]">
+                <div id="box-3"class="result-box top-[60px]">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -45,7 +45,7 @@
                     </p>
                 </div>
     
-                <div class="result-box top-[90px]">
+                <div id="box-4"class="result-box top-[90px]">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -83,6 +83,50 @@
 
 <script setup>
 
+    const { $gsap, $ScrollTrigger, $animation } = useNuxtApp()
+
+    onMounted(() => {
+
+        const bottomScreen = window.innerHeight
+
+        console.log(bottomScreen)
+
+        let tlBoxes = $gsap.timeline({
+            scrollTrigger: {
+                trigger: "#results",
+                start: "top",
+                pin: "#results",
+                scrub: true,
+                pinSpacing: true,
+                // markers: true,
+                ease: "Power2.in",
+                toggleActions: "restart none restart none"
+            },
+        })
+
+        tlBoxes.from(
+            "#box-2",
+            {
+                y: bottomScreen,
+            }
+        )
+
+        tlBoxes.from(
+            "#box-3",
+            {
+                y: bottomScreen,
+            }
+        )
+
+        tlBoxes.from(
+            "#box-4",
+            {
+                y: bottomScreen,
+            }
+        )
+
+    })
+
 </script>
 
 <style scoped>
@@ -104,6 +148,22 @@
     }
 
     .boxes {
+
+        #box-1 {
+            --index: 1;
+        }
+
+        #box-2 {
+            --index: 2;
+        }
+
+        #box-3 {
+            --index: 3;
+        }
+
+        #box-4 {
+            --index: 4;
+        }
 
         .result-box {
             border: 2px solid #3DB8D8;
