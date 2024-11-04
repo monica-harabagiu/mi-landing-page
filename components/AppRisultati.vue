@@ -83,7 +83,7 @@
 
 <script setup>
 
-    const { $gsap, $ScrollTrigger, $animation } = useNuxtApp()
+    const { $gsap, $ScrollTrigger,} = useNuxtApp()
 
     onMounted(() => {
 

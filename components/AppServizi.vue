@@ -1,10 +1,10 @@
 <template>
-    <section class="container mt-40">
+    <section id="services-section" class="container mt-40">
         
         <h5>Servizi</h5>
         <hr>
 
-        <div class="flex justify-between">
+        <div class="flex justify-between services-intro">
             <div class="basis-1/2">
                 <h2>Ricevi notizie targetizzate alla vendita e crea il tuo team di professionisti</h2>
                 <p>Grazie a strategie mirate e personalizzate <span>in base alle tue esigenze</span> ti forniamo un asset completo per raggiungere i tuoi obiettivi</p>
@@ -46,6 +46,29 @@
 </template>
 
 <script setup>
+
+    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+
+    onMounted(() => {
+
+        let tlServices = $gsap.timeline({
+            scrollTrigger: {
+                trigger: "#services-section",
+                start: "top",
+                scrub: true,
+                pin: "#services-section",
+                // pinSpacing: true,
+                markers: true,
+            },
+        })
+
+        tlServices.from(
+            ".services-intro",
+            {
+                y: 30,
+            }
+        )
+    })
 
 </script>
 

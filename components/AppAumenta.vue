@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="slide1 flex flex-col justify-center items-center text-white">
+        <div class="slide1 flex flex-col justify-center items-center text-white z-[-1]">
             <!-- <div class="frame"> -->
             <svg class="title" width="100%" height="100%" preserveAspectratio="xMinYMin">
                 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">
@@ -109,7 +109,7 @@
         tl2.to(
             ".slide1",
             {
-                display: "none"
+                display: "none",
             }
         )
         
