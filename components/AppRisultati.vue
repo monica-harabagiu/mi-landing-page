@@ -1,5 +1,5 @@
 <template>
-    <section id="results" class="container pt-14">
+    <section id="results" class="container pt-14 -mt-20">
         <h5>Risultati</h5>
         <hr>
 

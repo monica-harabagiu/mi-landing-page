@@ -162,8 +162,8 @@
     }
 
     .slide-finale {
-        margin-top: -90vh;
-        height: 100vh;
+        margin-top: -70vh;
+        height: 60vh;
         overflow: hidden;
         /* border: 2px solid green; */
 
