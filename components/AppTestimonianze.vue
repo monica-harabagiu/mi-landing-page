@@ -1,5 +1,5 @@
 <template>
-    <section class="container flex flex-col justify-center relative">
+    <section class="testimonials-section flex flex-col justify-center relative mt-40">
 
         
         <div class="testimonials relative">
@@ -126,6 +126,74 @@
 </template>
 
 <script setup>
+
+    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+    
+    onMounted(() => {
+        
+        const bottomScreen = window.innerHeight
+        const widthScreen = window.innerWidth
+
+        let tlTestimonials = $gsap.timeline({
+            scrollTrigger: {
+                trigger: ".testimonials-section",
+                start: "top",
+                end: "bottom",
+                scrub: true,
+                pin: ".testimonials-section",
+                pinSpacing: true,
+                // ease: "Power5.inOut",
+                // markers: true,
+            },
+        })
+
+        tlTestimonials.from(
+            ".box-2",
+            {
+                left: "-500",
+                ease: "Power5.inOut",
+                duration: 500,
+            }
+        )
+
+        tlTestimonials.from(
+            ".box-3",
+            {
+                x: widthScreen,
+                ease: "Power5.inOut",
+                duration: 500,
+            }
+        )
+
+        tlTestimonials.from(
+            ".box-4",
+            {
+                left: "-500",
+                ease: "Power5.inOut",
+                duration: 500,
+            }
+        )
+
+        tlTestimonials.from(
+            ".box-5",
+            {
+                x: widthScreen,
+                ease: "Power5.inOut",
+                duration: 500,
+            }
+        )
+
+        tlTestimonials.from(
+            ".box-1",
+            {
+                y: bottomScreen,
+                ease: "Power5.inOut",
+                duration: 500,
+            }
+        )
+     
+
+    })
 
 </script>
 

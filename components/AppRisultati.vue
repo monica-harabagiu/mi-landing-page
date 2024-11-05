@@ -99,7 +99,6 @@
                 scrub: true,
                 pinSpacing: true,
                 // markers: true,
-                ease: "Power2.in",
                 toggleActions: "restart none restart none"
             },
         })
@@ -108,6 +107,8 @@
             "#box-2",
             {
                 y: bottomScreen,
+                ease: "Power4.inOut",
+                duration: 500,
             }
         )
 
@@ -115,6 +116,8 @@
             "#box-3",
             {
                 y: bottomScreen,
+                ease: "Power4.inOut",
+                duration: 500,
             }
         )
 
@@ -122,6 +125,8 @@
             "#box-4",
             {
                 y: bottomScreen,
+                ease: "Power4.inOut",
+                duration: 500,
             }
         )
 

@@ -58,6 +58,7 @@
                 endTrigger: "#services-section",
                 end: "bottom bottom",
                 scrub: true,
+                ease: "sine.inOut",
                 // markers: true,
             },
         })
