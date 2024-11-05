@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="team-section">
         <div class="container">
 
             <div class="flex">
@@ -15,48 +15,16 @@
             </div>
 
             <div class="team-box">
-                <div class="team-slider flex">
+                <div class="team-slider flex">  
 
-                    <div class="single-team text-center basis-1/5">
+                    <div v-for="element in teams.companyTeam" class="single-team text-center basis-1/5">
                         <figure class="flex justify-center mb-5">
-                            <img src="../assets/img/team-images/metodo-immobiliare-andrea-audisio.webp" alt="" width="100">
+                            <img :src="`/teamMembers/${element.src}`" :alt="element.alt" width="100">
                         </figure>
-                        <h5>Andrea Audisio</h5>
-                        <h6>Direttore Operativo</h6>
+                        <h5>{{ element.name }}</h5>
+                        <h6>{{ element.role }}</h6>
                     </div>
-
-                    <div class="single-team text-center basis-1/5">
-                        <figure class="flex justify-center mb-5">
-                            <img src="../assets/img/team-images/metodo-immobiliare-stefano-solieri.webp" alt="" width="100">
-                        </figure>
-                        <h5>Stefano Solieri</h5>
-                        <h6>CRM Specialist</h6>
-                    </div>
-
-                    <div class="single-team text-center basis-1/5">
-                        <figure class="flex justify-center mb-5">
-                            <img src="../assets/img/team-images/metodo-immobiliare-aurora-puglisi.webp" alt="" width="100">
-                        </figure>
-                        <h5>Aurora Puglisi</h5>
-                        <h6>Project Manager</h6>
-                    </div>
-
-                    <div class="single-team text-center basis-1/5">
-                        <figure class="flex justify-center mb-5">
-                            <img src="../assets/img/team-images/metodo-immobiliare-rosa-romano.webp" alt="" width="100">
-                        </figure>
-                        <h5>Rosa Romano</h5>
-                        <h6>Amministrazione</h6>
-                    </div>
-
-                    <div class="single-team text-center basis-1/5">
-                        <figure class="flex justify-center mb-5">
-                            <img src="../assets/img/team-images/metodo-immobiliare-alessandro-todeschino.webp" alt="" width="100">
-                        </figure>
-                        <h5>Alessandro Todeschino</h5>
-                        <h6>Direttore Commerciale</h6>
-                    </div>
-
+                
                 </div>
             </div>
         </div>
@@ -65,6 +33,32 @@
 </template>
 
 <script setup>
+
+    import { useTeamsStore } from '~/store/companyTeam'
+    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+
+    const teams = useTeamsStore()
+
+    onMounted(() => {
+
+        let tlTeam = $gsap.timeline({
+            scrollTrigger: {
+                trigger: "#team-section",
+                start: "top bottom",
+                end: "bottom",
+                scrub: true,
+                ease: "power2.inOut",
+                // markers: true,
+            },
+        })
+
+        tlTeam.from(
+            ".team-box",
+            {
+                y: 200,
+            }
+        )
+    })
 
 </script>
 
