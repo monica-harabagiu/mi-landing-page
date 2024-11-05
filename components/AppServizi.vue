@@ -16,8 +16,8 @@
             </div>
         </div>
 
-        <div class="services flex mt-32 gap-20">
-            <div class="single-service basis-1/3">
+        <div class="services flex mt-6 gap-20">
+            <div class="single-service service-1 basis-1/3">
                 <figure>
                     <img src="../assets/img/graphic-elements/services-element-1.webp" alt="">       
                 </figure>
@@ -53,19 +53,26 @@
 
         let tlServices = $gsap.timeline({
             scrollTrigger: {
-                trigger: "#services-section",
-                start: "top",
+                trigger: ".services-intro",
+                start: "top bottom",
+                endTrigger: "#services-section",
+                end: "bottom bottom",
                 scrub: true,
-                pin: "#services-section",
-                // pinSpacing: true,
-                markers: true,
+                // markers: true,
             },
         })
 
         tlServices.from(
             ".services-intro",
             {
-                y: 30,
+                y: 100,
+            }
+        )
+
+        tlServices.from(
+            ".services",
+            {
+                y: 100,
             }
         )
     })
