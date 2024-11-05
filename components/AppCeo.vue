@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-60">
+    <section id="ceo-section" class="mt-80">
         <div class="container flex py-20">
             <div class="basis-1/2 flex justify-center relative">
                 <figure class="-mt-40">
@@ -22,6 +22,29 @@
 </template>
 
 <script setup>
+
+    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+
+    onMounted(() => {
+
+        let tlCeo = $gsap.timeline({
+            scrollTrigger: {
+                trigger: "#ceo-section",
+                start: "top bottom",
+                end: "bottom",
+                scrub: true,
+                ease: "power2.inOut",
+                // markers: true,
+            },
+        })
+
+        tlCeo.from(
+            ".name-tag",
+            {
+                y: 200,
+            }
+        )
+    })
 
 </script>
 
