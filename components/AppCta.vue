@@ -1,5 +1,8 @@
 <template>
-    <section class="container">
+    <section class="cta-section container relative">
+        <figure class="absolute element-1">
+            <img src="../assets/img/graphic-elements/cta-element-1.webp" alt="" width="150">
+        </figure>
         <div class="cta-box flex overflow-hidden gap-20 items-center mb-32">  
             <div class="basis-1/2">
                 <figure>
@@ -21,9 +24,38 @@
 
 <script setup>
 
+    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+
+    onMounted(() => {
+
+        let tlCta = $gsap.timeline({
+            scrollTrigger: {
+                trigger: ".cta-section",
+                start: "bottom bottom",
+                end: "bottom top",
+                scrub: true,
+                ease: "sine.inOut",
+                // markers: true,
+            },
+        })
+
+        tlCta.to(
+            ".element-1",
+            {
+                y: 20,
+            }
+        )
+
+    })
+
 </script>
 
 <style scoped>
+
+    .element-1 {
+        left: 40%;
+        top:  -5%;
+    }
 
     .cta-box {
         border: 2px solid #3DB8D8;
