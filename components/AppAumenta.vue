@@ -125,9 +125,10 @@
 <style scoped>
     .slide1 {
         height: 80vh;
+        max-width: 1600px;
         border: 2px solid #3DB8D8;
         border-radius: 50px;
-        margin: 50px;
+        margin: 50px auto;
 
         /* h2 {
             margin-top: -250px;
