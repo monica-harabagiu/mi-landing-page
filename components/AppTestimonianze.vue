@@ -1,6 +1,9 @@
 <template>
-    <section class="testimonials-section flex flex-col justify-center relative mt-40 overflow-hidden">
+    <section class="testimonials-section flex flex-col justify-center relative mt-40 ">
 
+        <!-- <figure class="absolute element-1">
+            <img src="../assets/img/graphic-elements/testimonials-element-1.webp" alt="" width="100">
+        </figure> -->
         
         <div class="testimonials relative">
             <h2 class="text-center">Testimonianze</h2>
@@ -168,7 +171,7 @@
         tlTestimonials.from(
             ".box-4",
             {
-                left: "-500",
+                left: "-600",
                 ease: "Power5.inOut",
                 duration: 500,
             }
@@ -201,6 +204,7 @@
 
     section {
         height: 100vh;
+
     }
 
     h2 {
