@@ -27,7 +27,9 @@
 
 <script setup>
     import { useLogosStore } from '~/store/companyLogos'
+    import { useAnimationsStore } from '~/store/gsapAnimations'
     const logos = useLogosStore()
+    const animation = useAnimationsStore()
 
     const { $gsap, $ScrollTrigger } = useNuxtApp()
 
@@ -113,25 +115,8 @@
             }
         )
         
-
-        let logoCarousel = document.querySelector(".logo-carousel").offsetWidth;
-
-        $gsap.timeline({
-            repeat: -1,
-            defaults: {
-                ease: "none",
-            },
-        })
-        .fromTo(
-            ".card",
-            {
-                x: (i, el) => innerWidth * i
-            },
-            {
-                x: (i, el, t) => -innerWidth * (t.length - i),
-                duration: 10,
-            }
-        )
+        const singleLogo = $gsap.utils.toArray(".single-logo"),
+            loop = animation.horizontalLoop(singleLogo, { repeat: true, speed: 0.5 });
 
     })
 </script>
