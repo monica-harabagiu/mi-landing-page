@@ -1,5 +1,5 @@
 <template>
-    <section class="testimonials-section flex flex-col justify-center relative mt-40">
+    <section class="testimonials-section flex flex-col justify-center relative mt-40 overflow-hidden">
 
         
         <div class="testimonials relative">
