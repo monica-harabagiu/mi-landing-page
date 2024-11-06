@@ -6,38 +6,45 @@
                 <div class="basis-1/2">
                     <h2>Giovani, smart e determinati</h2>
                     <p>
-                        Il nostro obiettivo? Portare risultati sempre più grandi ai nostri partner grazie alle nostre capacità nel mondo del digital marketing immobiliare, continuando ad affinarle giorno dopo giorno.
+                        Il nostro obiettivo? Portare risultati sempre più grandi ai nostri partner grazie alle nostre
+                        capacità nel mondo del digital marketing immobiliare, continuando ad affinarle giorno dopo
+                        giorno.
                     </p>
                     <p>
-                        Un team specializzato le cui competenze sono volte a far arrivare notizie, gestire campagn e creare asset brandizzati, offrendo una vasta gamma di servizi mirati per curare l'immagine del cliente portandogli incarichi.
+                        Un team specializzato le cui competenze sono volte a far arrivare notizie, gestire campagn e
+                        creare asset brandizzati, offrendo una vasta gamma di servizi mirati per curare l'immagine del
+                        cliente portandogli incarichi.
                     </p>
                 </div>
             </div>
 
-            <div class="team-box">
-                <div class="team-slider flex">  
+            <div class="team-box overflow-hidden">
+                <div class="team-slider flex w-full">
 
-                    <div v-for="element in teams.companyTeam" class="single-team text-center basis-1/5">
+                    <div v-for="element in teams.companyTeam" class="single-team text-center w-1/5 shrink-0">
                         <figure class="flex justify-center mb-5">
                             <img :src="`/teamMembers/${element.src}`" :alt="element.alt" width="100">
                         </figure>
                         <h5>{{ element.name }}</h5>
                         <h6>{{ element.role }}</h6>
                     </div>
-                
+
                 </div>
             </div>
         </div>
-        
+
     </section>
 </template>
 
 <script setup>
 
     import { useTeamsStore } from '~/store/companyTeam'
-    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+    import { useAnimationsStore } from '~/store/gsapAnimations'
+    const { $gsap, $ScrollTrigger } = useNuxtApp()
 
     const teams = useTeamsStore()
+    const animation = useAnimationsStore()
+
 
     onMounted(() => {
 
@@ -58,12 +65,15 @@
                 y: 200,
             }
         )
+
+        const singleTeam = $gsap.utils.toArray(".single-team"),
+            loop = animation.horizontalLoop(singleTeam, { repeat: true, speed: 0.5 });
+
     })
 
 </script>
 
 <style scoped>
-
     section {
         background-image: url(../assets/img/metodo-immobiliare-background-1.webp);
         background-size: cover;
@@ -106,5 +116,4 @@
             }
         }
     }
-
 </style>
