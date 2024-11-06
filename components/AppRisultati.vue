@@ -1,7 +1,15 @@
 <template>
-    <section id="results" class="container pt-14 -mt-20">
+    <section id="results" class="container pt-14 -mt-20 relative">
         <h5>Risultati</h5>
         <hr>
+
+        <figure class="results-element-1 absolute right-10">
+            <img src="../assets/img/graphic-elements/result-element-1.webp" alt="" width="70">
+        </figure>
+        <figure class="results-element-2 absolute right-0 top-60 rotate-45">
+            <img src="../assets/img/graphic-elements/hero-element-8.webp" alt="" width="40">
+        </figure>
+        
 
         <div class="flex gap-52 justify-between my-32">
 
@@ -89,8 +97,6 @@
 
         const bottomScreen = window.innerHeight
 
-        console.log(bottomScreen)
-
         let tlBoxes = $gsap.timeline({
             scrollTrigger: {
                 trigger: "#results",
@@ -129,6 +135,24 @@
                 duration: 500,
             }
         )
+
+        // let tlResultElements = $gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".results",
+        //         start: "top top",
+        //         end: "bottom top",
+        //         scrub: true,
+        //         ease: "sine.inOut",
+        //         markers: true,
+        //     },
+        // })
+
+        // tlResultElements.to(
+        //     ".results-element-1",
+        //     {
+        //         y: 100
+        //     }
+        // )
 
     })
 
