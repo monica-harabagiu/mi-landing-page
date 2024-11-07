@@ -1,5 +1,5 @@
 <template>
-    <section class="testimonials-section flex flex-col justify-center relative mt-40 ">
+    <section id="testimonials" class="testimonials-section flex flex-col justify-center relative mt-40 ">
 
         <!-- <figure class="absolute element-1">
             <img src="../assets/img/graphic-elements/testimonials-element-1.webp" alt="" width="100">
@@ -27,7 +27,7 @@
                             </defs>
                         </svg>  
                     </figure>
-                    <a href="#">Video-testimonianza</a>
+                    <a href="https://www.youtube.com/watch?v=tKkr4WFma78" target="_blank">Video-testimonianza</a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                             </defs>
                         </svg>  
                     </figure>
-                    <a href="#">Video-testimonianza</a>
+                    <a href="https://www.youtube.com/watch?v=m9u59Z8i0do" target="_blank">Video-testimonianza</a>
                 </div>
             </div>
 
@@ -73,7 +73,7 @@
                             </defs>
                         </svg>  
                     </figure>
-                    <a href="#">Video-testimonianza</a>
+                    <a href="https://www.youtube.com/watch?v=RAGvanEgr90" target="_blank">Video-testimonianza</a>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@
                             </defs>
                         </svg>  
                     </figure>
-                    <a href="#">Video-testimonianza</a>
+                    <a href="https://www.youtube.com/watch?v=OCRH4cNlERQ" target="_blank">Video-testimonianza</a>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@
                             </defs>
                         </svg>  
                     </figure>
-                    <a href="#">Video-testimonianza</a>
+                    <a href="https://www.youtube.com/watch?v=qRoABBnbszg" target="_blank">Video-testimonianza</a>
                 </div>
             </div>
 

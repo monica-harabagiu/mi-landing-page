@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@hypernym/nuxt-gsap'],
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@hypernym/nuxt-gsap', '@vueuse/nuxt'],
   css: [
     '@/assets/main.scss'
   ],

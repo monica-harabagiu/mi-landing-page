@@ -9,7 +9,7 @@
                 <h2>Tutta la nostra esperienza nel marketing immobiliare a tua disposizione</h2>
             </div>
             <div>
-                <a href="#">
+                <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank">
                     <button class="btn btn-main">Prenota una consulenza gratuita</button>
                 </a>
             </div>

@@ -13,17 +13,17 @@
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu">
-              <li><a class="menu-link" href="#">Risultati</a></li>
-              <li><a class="menu-link" href="#">Servizi</a></li>
-              <li><a class="menu-link" href="#">Testimonianze</a></li>
-              <li><a class="menu-link" href="#">Chi Siamo</a></li>
+              <li><a class="menu-link" href="#results">Risultati</a></li>
+              <li><a class="menu-link" href="#services-section">Servizi</a></li>
+              <li><a class="menu-link" href="#testimonials">Testimonianze</a></li>
+              <li><a class="menu-link" href="#ceo-section">Chi Siamo</a></li>
               <li>
                 <a href="#">
                   <button class="btn btn-border">Blog</button>
                 </a>
               </li>
               <li>
-                <a href="#" class="last-button">
+                <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank" class="last-button">
                   <button class="btn btn-main">Consulenza gratuita</button>
                 </a>
               </li>

@@ -14,7 +14,7 @@
                 <p class="mb-10">
                     Sarai contattato telefonicamente da un nostro consulente per stabilire se ci sono i requisiti per raggiungere i tuoi obiettivi aziendali.
                 </p>
-                <a href="#">
+                <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank">
                     <button class="btn btn-main">Prenota una consulenza gratuita</button>
                 </a>
             </div>

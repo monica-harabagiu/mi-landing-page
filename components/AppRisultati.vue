@@ -64,7 +64,7 @@
                     <p class="mb-20">
                         Come avere la fila di persone che vogliono collaborare con la tua agenzia.
                     </p>
-                    <a href="#">
+                    <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank">
                         <button class="btn btn-main">Prenota una consulenza gratuita</button>
                     </a>
                 </div>

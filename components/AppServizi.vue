@@ -10,7 +10,7 @@
                 <p>Grazie a strategie mirate e personalizzate <span>in base alle tue esigenze</span> ti forniamo un asset completo per raggiungere i tuoi obiettivi</p>
             </div>
             <div>
-                <a href="#">
+                <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank">
                     <button class="btn btn-main">Prenota una consulenza gratuita</button>
                 </a>
             </div>

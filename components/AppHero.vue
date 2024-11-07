@@ -7,7 +7,7 @@
         <h6>
             E diventa il n°1 della tua città!
         </h6>
-        <a href="#">
+        <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank">
             <button class="btn btn-main">Ottieni una consulenza gratuita</button>
         </a>
 
