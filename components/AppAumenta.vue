@@ -13,12 +13,12 @@
         <div class="slide-finale flex flex-col justify-center items-center gap-8">
             <h2>Diventa il <span>leader</span> nella tua zona come:</h2>
             <div class="logo-carousel flex gap-8">
-                <!-- <figure v-for="element in logos.companyLogos">
+                <figure v-for="element in logos.companyLogos" class="single-logo">
                     <img :src="`/partnerLogos/${element.src}`" :alt="element.title" width="200">
-                </figure> -->
-                <figure v-for="element in 10" class="single-logo">
-                    <img src="/partnerLogos/concept-home.png" width="200">
                 </figure>
+                <!-- <figure v-for="element in 10" class="single-logo">
+                    <img src="/partnerLogos/concept-home.png" width="200">
+                </figure> -->
             </div>
         </div>
     </section>
@@ -154,7 +154,7 @@
         /* border: 2px solid green; */
 
         h2 {
-            margin-top: -500px;
+            margin-top: -450px;
 
             span {
                 color: #3DB8D8;
