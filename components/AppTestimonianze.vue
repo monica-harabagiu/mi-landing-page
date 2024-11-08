@@ -8,7 +8,7 @@
         <div class="testimonials relative">
             <h2 class="text-center text-[60px] lg:text-[150px]">Testimonianze</h2>
 
-            <div class="testimonial-box box-1 absolute left-[50%] translate-y-[30%] translate-y-[30%] lg:top-[50%] translate-x-[-50%] lg:translate-y-[-50%] rotate-[-2deg]">
+            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[325px] h-[350px] box-1 absolute left-[50%] translate-y-[30%] translate-y-[30%] lg:top-[50%] translate-x-[-50%] lg:translate-y-[-50%] rotate-[-2deg]">
                 <h4>Concept Home</h4>
                 <h6>Agenzia Immobiliare con 5 sedi a Roma</h6>
                 <p><span>Processo:</span> Strutturazione di una strategia personalizzata per l'acquisizione d'immobili in esclusiva</p>
@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-2 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:left-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-70%] rotate-[-7deg]">
+            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[360px] h-[420px] box-2 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:left-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-70%] rotate-[-7deg]">
                 <h4>RemaxUp</h4>
                 <h6>Agenzia Immobiliare presente in tutto il Piemonte</h6>
                 <p><span>Processo:</span> Costruzione di una strategia personalizzata ed efficace per acquisire potenziali clienti</p>
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-3 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:bottom-0 lg:translate-x-0 lg:translate-y-[80%] rotate-[10deg]">
+            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[325px] h-[380px] box-3 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:bottom-0 lg:translate-x-0 lg:translate-y-[80%] rotate-[10deg]">
                 <h4>BeHome</h4>
                 <h6>Agenzia Immobiliare a Salò</h6>
                 <p><span>Processo:</span> Creazione di un eco-sistema di marketing digitale per attrarre clienti venditori di target medio-alto</p>
@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-4 absolute left-[50%] translate-x-[-50%] translate-y-[20%] lg:left-[15%] lg:bottom-0 lg:translate-x-0 lg:translate-y-[80%] rotate-[-15deg]">
+            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[380px] h-[440px] box-4 absolute left-[50%] translate-x-[-50%] translate-y-[20%] lg:left-[15%] lg:bottom-0 lg:translate-x-0 lg:translate-y-[80%] rotate-[-15deg]">
                 <h4>Replat</h4>
                 <h6>Agenzia Immobiliare su Campobasso</h6>
                 <p><span>Processo:</span> Strutturato un processo di marketing che permettesse di avere notizie di clienti venditori profilati e pronti a vendere il proprio immobile</p>
@@ -100,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-5 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-80%] rotate-[15deg]">
+            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[325px] h-[400px] box-5 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-80%] rotate-[15deg]">
                 <h4>Frimm</h4>
                 <h6>Agenzia Immobiliare con 5 sedi a Roma</h6>
                 <p><span>Processo:</span> Rafforzamento personal brand per attrarre clienti venditori pronti e motivati a vendere il loro immobile con la sua consulenza</p>
@@ -217,7 +217,7 @@
         background-color: #00101C;
         padding: 30px;
 
-        width: 470px;
+        /* width: 470px; */
         /* height: 325px; */
 
         h4 {
@@ -255,26 +255,26 @@
 
     .box-1 {
         z-index: 5;
-        height: 325px;
+        /* height: 325px; */
     }
 
     .box-2 {
         z-index: 1;
-        height: 360px;
+        /* height: 360px; */
     }
 
     .box-3 {
         z-index: 2;
-        height: 325px;
+        /* height: 325px; */
     }
 
     .box-4 {
         z-index: 3;
-        height: 380px;
+        /* height: 380px; */
     }
 
     .box-5 {
         z-index: 4;
-        height: 325px;
+        /* height: 325px; */
     }
 </style>
