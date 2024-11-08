@@ -1,5 +1,5 @@
 <template>
-    <section id="results" class="container pt-14 -mt-20 relative">
+    <section id="results" class="container pt-14 -mt-20 relative mx-auto px-4">
         <h5>Risultati</h5>
         <hr>
 
@@ -11,10 +11,11 @@
         </figure>
         
 
-        <div class="flex gap-52 justify-between my-32">
+        <div class="flex flex-col-reverse lg:flex-row lg:gap-52 my-32">
 
-            <div class="boxes basis-1/3 ms-20 relative">
-                <div id="box-1"class="result-box">
+            <div class="boxes basis-1/3 lg:ms-20 lg:relative">
+                
+                <div id="box-1"class="result-box top-[270px] lg:top-0 absolute lg:left-0 lg:right-0 left-10 right-10">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -27,7 +28,7 @@
                     </p>
                 </div>
     
-                <div id="box-2"class="result-box top-[30px]">
+                <div id="box-2"class="result-box top-[310px] lg:top-[30px] lg:left-0 lg:right-0 left-10 right-10 absolute">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -40,7 +41,7 @@
                     </p>
                 </div>
     
-                <div id="box-3"class="result-box top-[60px]">
+                <div id="box-3"class="result-box top-[350px] lg:top-[60px] lg:left-0 lg:right-0 left-10 right-10 absolute">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -53,7 +54,7 @@
                     </p>
                 </div>
     
-                <div id="box-4"class="result-box top-[90px]">
+                <div id="box-4"class="result-box top-[390px] lg:top-[90px] lg:left-0 lg:right-0 left-10 right-10 absolute">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
@@ -70,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="numbers basis-1/3 flex flex-col gap-14">
+            <div class="numbers basis-1/3 flex flex-col gap-14 items-center lg:ms-20">
                 <div class="number">
                     <span>90%</span>
                     <p>Obiettivi prefissati raggiunti</p>
@@ -110,6 +111,15 @@
         })
 
         tlBoxes.from(
+            "#box-1",
+            {
+                y: bottomScreen,
+                ease: "Power4.inOut",
+                duration: 500,
+            }
+        )
+
+        tlBoxes.from(
             "#box-2",
             {
                 y: bottomScreen,
@@ -135,24 +145,6 @@
                 duration: 500,
             }
         )
-
-        // let tlResultElements = $gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: ".results",
-        //         start: "top top",
-        //         end: "bottom top",
-        //         scrub: true,
-        //         ease: "sine.inOut",
-        //         markers: true,
-        //     },
-        // })
-
-        // tlResultElements.to(
-        //     ".results-element-1",
-        //     {
-        //         y: 100
-        //     }
-        // )
 
     })
 
@@ -199,7 +191,6 @@
             border-radius: 20px;
             padding: 50px 30px;
             background-color: #00101C;
-            position: absolute;
 
             h6 {
                 font-size: 18px;
