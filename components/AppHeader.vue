@@ -1,7 +1,7 @@
 <template>
     <div>
-      <header class="header">
-        <div class="container px-5 lg:px-0">
+      <header>
+        <div class="container mx-auto px-4">
           <nav>
             <div class="logo">
               <NuxtLink to="/">
@@ -40,7 +40,7 @@
 
 <style scoped>
 
-.header {
+header {
   position: sticky;
   top: 0;
   width: 100%;
