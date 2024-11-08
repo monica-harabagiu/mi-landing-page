@@ -1,14 +1,14 @@
 <template>
-    <section id="testimonials" class="testimonials-section flex flex-col justify-center relative mt-40 ">
+    <section id="testimonials" class="testimonials-section flex flex-col lg:justify-center relative mt-40 h-lvh lg:p-0 pt-32">
 
         <!-- <figure class="absolute element-1">
             <img src="../assets/img/graphic-elements/testimonials-element-1.webp" alt="" width="100">
         </figure> -->
         
         <div class="testimonials relative">
-            <h2 class="text-center">Testimonianze</h2>
+            <h2 class="text-center text-[60px] lg:text-[150px]">Testimonianze</h2>
 
-            <div class="testimonial-box box-1 absolute">
+            <div class="testimonial-box box-1 absolute left-[50%] translate-y-[30%] translate-y-[30%] lg:top-[50%] translate-x-[-50%] lg:translate-y-[-50%] rotate-[-2deg]">
                 <h4>Concept Home</h4>
                 <h6>Agenzia Immobiliare con 5 sedi a Roma</h6>
                 <p><span>Processo:</span> Strutturazione di una strategia personalizzata per l'acquisizione d'immobili in esclusiva</p>
@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-2 absolute">
+            <div class="testimonial-box box-2 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:left-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-70%] rotate-[-7deg]">
                 <h4>RemaxUp</h4>
                 <h6>Agenzia Immobiliare presente in tutto il Piemonte</h6>
                 <p><span>Processo:</span> Costruzione di una strategia personalizzata ed efficace per acquisire potenziali clienti</p>
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-3 absolute">
+            <div class="testimonial-box box-3 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:bottom-0 lg:translate-x-0 lg:translate-y-[80%] rotate-[10deg]">
                 <h4>BeHome</h4>
                 <h6>Agenzia Immobiliare a Salò</h6>
                 <p><span>Processo:</span> Creazione di un eco-sistema di marketing digitale per attrarre clienti venditori di target medio-alto</p>
@@ -77,11 +77,11 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-4 absolute">
+            <div class="testimonial-box box-4 absolute left-[50%] translate-x-[-50%] translate-y-[20%] lg:left-[15%] lg:bottom-0 lg:translate-x-0 lg:translate-y-[80%] rotate-[-15deg]">
                 <h4>Replat</h4>
                 <h6>Agenzia Immobiliare su Campobasso</h6>
                 <p><span>Processo:</span> Strutturato un processo di marketing che permettesse di avere notizie di clienti venditori profilati e pronti a vendere il proprio immobile</p>
-                <p><span>Risultato:</span> Avendo strutturato bene il processo di marketing sin dall’inizio, nelle prime due settimane di lavoro hanno effettuato più di 10 appuntamenti con persone intenzionate a vendere in zona</p>
+                <p><span>Risultato:</span> Avendo strutturato bene il processo di marketing sin dall'inizio, nelle prime due settimane di lavoro hanno effettuato più di 10 appuntamenti con persone intenzionate a vendere in zona</p>
                 <div class="flex video-link items-center gap-4 absolute -left-6">
                     <figure>
                         <svg width="50" height="50" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,11 +100,11 @@
                 </div>
             </div>
 
-            <div class="testimonial-box box-5 absolute">
+            <div class="testimonial-box box-5 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-80%] rotate-[15deg]">
                 <h4>Frimm</h4>
                 <h6>Agenzia Immobiliare con 5 sedi a Roma</h6>
                 <p><span>Processo:</span> Rafforzamento personal brand per attrarre clienti venditori pronti e motivati a vendere il loro immobile con la sua consulenza</p>
-                <p><span>Risultato:</span> 2 incarichi firmati d’immobili dal valore provvigionale di € 20.000 e altri 4 in lavorazione nei primi 45 giorni</p>
+                <p><span>Risultato:</span> 2 incarichi firmati d'immobili dal valore provvigionale di € 20.000 e altri 4 in lavorazione nei primi 45 giorni</p>
                 <div class="flex video-link items-center gap-4 absolute -left-6">
                     <figure>
                         <svg width="50" height="50" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,13 +202,12 @@
 
 <style scoped>
 
-    section {
+    /* section {
         height: 100vh;
 
-    }
+    } */
 
     h2 {
-        font-size: 170px;
         font-weight: 800;
     }
 
@@ -255,41 +254,27 @@
     }
 
     .box-1 {
-        left: 50%;
-        transform: translate(-50%, -90%) rotate(-2deg);
         z-index: 5;
         height: 325px;
     }
 
     .box-2 {
-        left: 20%;
-        top: 0;
-        transform: translate(-20%, -70%) rotate(-3deg);
-        z-index: 4;
+        z-index: 1;
         height: 360px;
     }
 
     .box-3 {
-        right: 10%;
-        bottom: 0;
-        transform: translate(0, 80%) rotate(6deg);
-        z-index: 3;
+        z-index: 2;
         height: 325px;
     }
 
     .box-4 {
-        left: 10%;
-        bottom: 0;
-        transform: translate(0, 80%) rotate(-13deg);
-        z-index: 2;
+        z-index: 3;
         height: 380px;
     }
 
     .box-5 {
-        right: 10%;
-        top: 0;
-        transform: translate(0, -80%) rotate(13deg);
-        z-index: 1;
+        z-index: 4;
         height: 325px;
     }
 </style>
