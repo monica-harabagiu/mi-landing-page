@@ -1,16 +1,16 @@
 <template>
     <section id="team-section">
-        <div class="container">
+        <div class="container mx-auto px-4">
 
-            <div class="flex">
+            <div class="lg:flex">
                 <div class="basis-1/2">
-                    <h2>Giovani, smart e determinati</h2>
-                    <p>
+                    <h2 class="text-[35px] lg:text-[40px]">Giovani, smart e determinati</h2>
+                    <p class="text-[15px] lg:text-[18px]">
                         Il nostro obiettivo? Portare risultati sempre più grandi ai nostri partner grazie alle nostre
                         capacità nel mondo del digital marketing immobiliare, continuando ad affinarle giorno dopo
                         giorno.
                     </p>
-                    <p>
+                    <p class="text-[15px] lg:text-[18px]">
                         Un team specializzato le cui competenze sono volte a far arrivare notizie, gestire campagn e
                         creare asset brandizzati, offrendo una vasta gamma di servizi mirati per curare l'immagine del
                         cliente portandogli incarichi.
@@ -19,9 +19,9 @@
             </div>
 
             <div class="team-box overflow-hidden">
-                <div class="team-slider flex w-full">
+                <div class="team-slider flex w-full gap-7 lg:gap-0">
 
-                    <div v-for="element in teams.companyTeam" class="single-team text-center w-1/5 shrink-0">
+                    <div v-for="element in teams.companyTeam" class="single-team text-center w-1/2 lg:w-1/5 shrink-0">
                         <figure class="flex justify-center mb-5">
                             <img :src="`/teamMembers/${element.src}`" :alt="element.alt" width="100">
                         </figure>
@@ -85,7 +85,6 @@
         margin-bottom: 200px;
 
         h2 {
-            font-size: 40px;
             font-weight: 800;
             margin-bottom: 30px;
         }
