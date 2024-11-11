@@ -87,7 +87,7 @@
     }
 
     h5 {
-
+        font-size: 20px;
         font-weight: 700;
         color: #3DB8D8;
         margin-bottom: 10px;
