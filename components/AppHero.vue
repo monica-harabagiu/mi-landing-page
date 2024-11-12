@@ -11,7 +11,7 @@
             <button class="btn btn-main">Ottieni una consulenza gratuita</button>
         </a>
 
-        <figure class="hidden lg:block absolute element-1 top-5 left-0">
+        <figure class="hidden lg:block absolute element-1 top-5 left-20">
             <img src="../assets/img/graphic-elements/hero-element-1.webp" alt="" width="220">
         </figure>
         <figure class="hidden lg:block absolute element-2 top-24 right-0">

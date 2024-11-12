@@ -100,9 +100,9 @@
                 </div>
             </div>
 
-            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[325px] h-[400px] box-5 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-80%] rotate-[15deg]">
+            <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[350px] h-[400px] box-5 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:right-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-80%] rotate-[15deg]">
                 <h4>Frimm</h4>
-                <h6>Agenzia Immobiliare con 5 sedi a Roma</h6>
+                <h6>Daniel Ghione, consulente immobiliare regione Piemonte</h6>
                 <p><span>Processo:</span> Rafforzamento personal brand per attrarre clienti venditori pronti e motivati a vendere il loro immobile con la sua consulenza</p>
                 <p><span>Risultato:</span> 2 incarichi firmati d'immobili dal valore provvigionale di € 20.000 e altri 4 in lavorazione nei primi 45 giorni</p>
                 <div class="flex video-link items-center gap-4 absolute -left-6">
