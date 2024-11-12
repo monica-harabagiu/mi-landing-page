@@ -1,14 +1,13 @@
 <template>
     <section>
-        <div class="slide1 flex flex-col justify-center items-center text-white z-[-1] ">
-            <!-- <div class="frame"> -->
+        <div class="slide1 flex flex-col justify-center items-center text-white z-[-1] my-[50px] lg:mx-auto mx-[20px]">
             <svg class="title" width="100%" height="100%" preserveAspectratio="xMinYMin">
                 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">
-                    <tspan class="main-text">aumenta</tspan>
-                    <tspan class="sub-text" x="50%" y="70%">le acquisizioni e le vendite</tspan>
+                    <tspan class="main-text lg:text-[260px] text-[80px]">aumenta</tspan>
+                    <tspan class="sub-text lg:text-[40px] hidden lg:block" x="50%" y="70%">le acquisizioni e le vendite</tspan>
+                    <tspan class="sub-text lg:hidden text-[20px]" x="50%" y="60%">le acquisizioni e le vendite</tspan>
                 </text>
             </svg>
-            <!-- </div> -->
         </div>
         <div class="slide-finale flex flex-col justify-center items-center gap-8">
             <h2>Diventa il <span>leader</span> nella tua zona come:</h2>
@@ -128,7 +127,7 @@
         max-width: 1600px;
         border: 2px solid #3DB8D8;
         border-radius: 50px;
-        margin: 50px auto;
+        /* margin: 50px auto; */
 
         /* h2 {
             margin-top: -250px;
@@ -139,13 +138,9 @@
     }
 
     .title .main-text {
-        font-size: 260px;
         font-weight: 900;
     }
 
-    .title .sub-text {
-        font-size: 40px;
-    }
 
     .slide-finale {
         margin-top: -70vh;
