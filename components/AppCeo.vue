@@ -3,7 +3,7 @@
         <div class="container lg:flex py-20">
             <div class="basis-1/2 flex justify-center relative">
                 <figure class="-mt-40">
-                    <img src="../assets/img/gianluca-sgambati-ceo.webp" alt="" width="370">
+                    <img src="../assets/img/gianluca-sgambati-ceo-2.webp" alt="" width="370">
                 </figure>
                 <div class="name-tag absolute bottom-[-5%] right-[5%] lg:right-[15%]">
                     <h6>Gianluca Sgambati</h6>
