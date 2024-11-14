@@ -21,7 +21,9 @@
                     <img src="../assets/img/graphic-elements/target-element-1.webp" alt="">       
                 </figure>
                 <h4>Consulenti Immobiliari</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius et tellus eget condimentum</span>
+                <span> 
+                    Attraverso strategie su misura, aiutiamo i consulenti immobiliari a raggiungere più clienti, costruire relazioni di fiducia e ottenere maggiore riconoscibilità nel settore migliorandone la tua visibilità online
+                </span>
             </div>
 
             <div class="single-target basis-1/3">
@@ -29,7 +31,9 @@
                     <img src="../assets/img/graphic-elements/target-element-2.webp" alt="">
                 </figure>
                 <h4>Agenzie Immobiliari</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius et tellus eget condimentum</span>
+                <span>
+                    Dal marketing digitale alla gestione dei social media, lavoriamo per aumentare l'autorevolezza delle agenzie immobiliari e attrarre potenziali clienti, con strategie che generano visibilità e conversioni
+                </span>
             </div>
 
             <div class="single-target basis-1/3">
@@ -37,7 +41,9 @@
                     <img src="../assets/img/graphic-elements/target-element-3.webp" alt="">
                 </figure>
                 <h4>Investitori Immobiliari</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius et tellus eget condimentum</span>
+                <span>
+                    Aiutiamo gli investitori immobiliari a connettersi con partner e clienti, a promuovere i propri progetti e a valorizzare ogni opportunità d'investimento, con soluzioni innovative e orientate al successo
+                </span>
             </div>
         </div>
 
