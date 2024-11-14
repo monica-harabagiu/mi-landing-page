@@ -32,10 +32,10 @@
             </div>
 
             <div class="testimonial-box lg:w-[470px] w-[350px] lg:h-[360px] h-[420px] box-2 absolute left-[50%] translate-x-[-50%] translate-y-[30%] lg:left-[15%] lg:top-0 lg:translate-x-0 lg:translate-y-[-70%] rotate-[-7deg]">
-                <h4>RemaxUp</h4>
-                <h6>Agenzia Immobiliare presente in tutto il Piemonte</h6>
-                <p><span>Processo:</span> Costruzione di una strategia personalizzata ed efficace per acquisire potenziali clienti</p>
-                <p><span>Risultato:</span> Dopo il primo mese, con diversi test non andati a buon fine, siamo riusciti a trovare il frame che convertiva e nel giro di due settimane ha ricevuto 5 nuovi clienti</p>
+                <h4>Daniel Ghione</h4>
+                <h6>consulente immobiliare regione Piemonte</h6>
+                <p><span>Processo:</span> Rafforzamento personal brand per attrarre clienti venditori pronti e motivati a vendere il loro immobile con la sua consulenza</p>
+                <p><span>Risultato:</span> 2 incarichi firmati d'immobili dal valore provvigionale di € 20.000 e altri 4 in lavorazione nei primi 45 giorni</p>
                 <div class="flex video-link items-center gap-4 absolute -left-6">
                     <figure>
                         <svg width="50" height="50" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
                             </defs>
                         </svg>  
                     </figure>
-                    <a href="https://www.youtube.com/watch?v=m9u59Z8i0do" target="_blank">Video-testimonianza</a>
+                    <a href="https://www.youtube.com/watch?v=qRoABBnbszg&t=2s" target="_blank">Video-testimonianza</a>
                 </div>
             </div>
 
