@@ -194,7 +194,6 @@
                 duration: 500,
             }
         )
-     
 
     })
 
@@ -277,4 +276,5 @@
         z-index: 4;
         /* height: 325px; */
     }
+
 </style>
