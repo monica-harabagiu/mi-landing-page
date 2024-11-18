@@ -26,7 +26,7 @@
 
     onMounted(() => {
 
-        let tlCta = $gsap.timeline({
+        let tlCta = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: ".cta-section",
                 start: "bottom bottom",

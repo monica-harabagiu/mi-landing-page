@@ -49,14 +49,14 @@ const scrollTop = () => {
 
     <AppHero />
     <AppAumenta />
-    <AppRisultati />
+    <!-- <AppRisultati />
     <AppServizi />
     <AppTestimonianze />
     <AppTarget />
     <AppCeo />
     <AppTeam />
     <AppCta />
-    <AppFooter />
+    <AppFooter /> -->
   </div>
 </template>
 

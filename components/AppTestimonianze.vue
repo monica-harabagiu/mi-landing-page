@@ -1,5 +1,5 @@
 <template>
-    <section id="testimonials" class="testimonials-section flex flex-col lg:justify-center relative mt-40 h-lvh lg:p-0 pt-32">
+    <section id="testimonials" class="testimonials-section container flex mx-auto px-4 flex-col lg:justify-center relative mt-40 h-lvh lg:p-0 pt-32">
 
         <!-- <figure class="absolute element-1">
             <img src="../assets/img/graphic-elements/testimonials-element-1.webp" alt="" width="100">
@@ -137,7 +137,7 @@
         const bottomScreen = window.innerHeight
         const widthScreen = window.innerWidth
 
-        let tlTestimonials = $gsap.timeline({
+        let tlTestimonials = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: ".testimonials-section",
                 start: "top",

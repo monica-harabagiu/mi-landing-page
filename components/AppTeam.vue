@@ -48,7 +48,7 @@
 
     onMounted(() => {
 
-        let tlTeam = $gsap.timeline({
+        let tlTeam = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: "#team-section",
                 start: "top bottom",

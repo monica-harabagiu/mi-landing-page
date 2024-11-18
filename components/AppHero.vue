@@ -1,5 +1,5 @@
 <template>
-    <section class="hero text-center py-40 flex flex-col gap-7 relative container">
+    <section class="hero text-center py-40 flex flex-col gap-7 relative container mx-auto px-4">
         <h1 class="lg:text-[64px] text-[32px]">
             Scopri le strategie di <br>
             <span>Web Marketing Immobiliare</span>
@@ -43,14 +43,16 @@
 
     onMounted(() => {
 
-        let tlHero = $gsap.timeline({
+    setTimeout(() => {
+
+        let tlHero = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: ".hero",
                 start: "top top",
                 end: "bottom top",
                 scrub: true,
                 ease: "sine.inOut",
-                // markers: true,
+                markers: true,
             },
         })
 
@@ -111,7 +113,9 @@
             "<"
         )
 
-    })
+    }, 1000)
+
+})
 </script>
 
 <style scoped>
@@ -122,10 +126,6 @@
             color: #3DB8D8;
         }
     }
-
-    /* h6 {
-        font-size: 20px;
-    } */
 
     a {
         font-size: 18px;

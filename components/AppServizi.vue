@@ -51,7 +51,7 @@
 
     onMounted(() => {
 
-        let tlServices = $gsap.timeline({
+        let tlServices = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: ".services-intro",
                 start: "top bottom",

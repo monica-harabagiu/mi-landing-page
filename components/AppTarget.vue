@@ -56,7 +56,7 @@
 
     onMounted(() => {
 
-        let tlTargets = $gsap.timeline({
+        let tlTargets = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: ".targets-intro",
                 start: "top bottom",
