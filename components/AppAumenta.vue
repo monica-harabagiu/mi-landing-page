@@ -1,27 +1,33 @@
 <template>
-    <section>
+    <section ref="main" class="container lg:mx-auto mx-[20px]">
         <div class="slide1 flex flex-col justify-center items-center text-white z-[-1] my-[50px] lg:mx-auto mx-[20px]">
             <svg class="title" width="100%" height="100%" preserveAspectratio="xMinYMin">
                 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white">
-                    <tspan class="main-text lg:text-[260px] text-[80px]">aumenta</tspan>
-                    <tspan class="sub-text lg:text-[40px] hidden lg:block" x="50%" y="70%">le acquisizioni e le vendite</tspan>
-                    <tspan class="sub-text lg:hidden text-[20px]" x="50%" y="60%">le acquisizioni e le vendite</tspan>
+                    <tspan class="main-text lg:text-[260px] text-[80px] block">aumenta</tspan>
+                    <tspan class="sub-text lg:text-[40px] hidden lg:block block" x="50%" y="70%">le acquisizioni e le vendite</tspan>
+                    <tspan class="sub-text lg:hidden text-[20px] block" x="50%" y="60%">le acquisizioni e le vendite</tspan>
                 </text>
             </svg>
         </div>
         <div class="slide-finale flex flex-col justify-center items-center gap-8">
             <h2>Diventa il <span>leader</span> nella tua zona come:</h2>
             <div class="logo-carousel flex gap-8">
-                <figure v-for="element in logos.companyLogos" class="single-logo">
+                <!-- <figure v-for="element in logos.companyLogos" class="single-logo">
                     <img :src="`/partnerLogos/${element.src}`" :alt="element.title" width="200">
-                </figure>
-                <!-- <figure v-for="element in 10" class="single-logo">
-                    <img src="/partnerLogos/concept-home.png" width="200">
                 </figure> -->
+                <figure v-for="element in 10" class="single-logo">
+                    <img
+                      src="https://picsum.photos/200/300"
+                      alt="element.title"
+                      width="200"
+                    />
+                </figure>
             </div>
         </div>
     </section>
 </template>
+
+
 
 
 <script setup>
@@ -33,9 +39,15 @@
     const { $gsap, $ScrollTrigger } = useNuxtApp()
 
 
-    onMounted(() => {
+    const main = ref();
+let ctx;
+
+onMounted(() => {
+  ctx = $gsap.context((self) => {
+    setTimeout( () => {
 
         let tl = $gsap.timeline({
+            posed: true,
             scrollTrigger: {
                 trigger: ".slide1",
                 scrub: true,
@@ -43,9 +55,25 @@
                 start: "center center",
                 endTrigger: ".slide-finale",
                 end: "bottom top",
-                // markers: true,
+                markers: true,
             },
         })
+
+        // function debounce(func, delay) {
+        //     let timeout;
+        //     return function (...args) {
+        //         const context = this; // Save the context (this)
+        //         clearTimeout(timeout); // Clear the timer if it already exists
+        //         timeout = setTimeout(() => {
+        //         func.apply(context, args); // Execute the function with proper context and arguments
+        //         }, delay);
+        //     };
+        // }
+
+        // debounce(tl, 250)
+
+        // tl.progress(1).progress(0)
+
 
         tl.to(
             ".slide1",
@@ -102,7 +130,7 @@
                 pin: true,
                 start: "bottom bottom",
                 end: "bottom bottom",
-                // markers: true,
+                markers: true,
             }
 
         })
@@ -117,17 +145,25 @@
         const singleLogo = $gsap.utils.toArray(".single-logo"),
             loop = animation.horizontalLoop(singleLogo, { repeat: true, speed: 0.5 });
 
-    })
+        }, 1000)
+  }, main.value); // <- Scope!
+});
+
+onUnmounted(() => {
+  ctx.revert(); // <- Easy Cleanup!
+});
 </script>
 
 
 <style scoped>
+
     .slide1 {
-        height: 80vh;
+        height: 700px;
         max-width: 1600px;
         border: 2px solid #3DB8D8;
         border-radius: 50px;
         /* margin: 50px auto; */
+        will-change: scroll-position, transform, opacity;
 
         /* h2 {
             margin-top: -250px;
@@ -141,12 +177,17 @@
         font-weight: 900;
     }
 
+    .title .sub-text {
+        will-change: opacity;
+    }
+
 
     .slide-finale {
-        margin-top: -70vh;
-        height: 60vh;
+        margin-top: -500px;
+        height: 700px;
         overflow: hidden;
         /* border: 2px solid green; */
+        will-change: opacity, scroll-position;
 
         h2 {
             margin-top: -450px;

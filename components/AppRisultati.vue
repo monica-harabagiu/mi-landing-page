@@ -98,7 +98,7 @@
 
         const bottomScreen = window.innerHeight
 
-        let tlBoxes = $gsap.timeline({
+        let tlBoxes = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: "#results",
                 start: "top",

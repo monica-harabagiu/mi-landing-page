@@ -1,6 +1,6 @@
 <template>
     <section id="ceo-section" class="mt-80 mx-auto px-4">
-        <div class="container lg:flex py-20">
+        <div class="container lg:flex py-20 mx-auto px-4">
             <div class="basis-1/2 flex justify-center relative">
                 <figure class="-mt-40">
                     <img src="../assets/img/gianluca-sgambati-ceo-2.webp" alt="" width="370">
@@ -27,7 +27,7 @@
 
     onMounted(() => {
 
-        let tlCeo = $gsap.timeline({
+        let tlCeo = $gsap.timeline({ force3D: false,
             scrollTrigger: {
                 trigger: "#ceo-section",
                 start: "top bottom",
