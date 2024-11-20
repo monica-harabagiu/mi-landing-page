@@ -1,6 +1,14 @@
 <script setup>
 import AppServizi from './components/AppServizi.vue';
 import AppTestimonianze from './components/AppTestimonianze.vue';
+
+// useSeoMeta({
+//   title: 'Metodo Immobiliare',
+//   ogTitle: 'Metodo Immobiliare',
+//   description: 'Scopri le strategie di web marketing immobiliare',
+//   ogDescription: 'Scopri le strategie di web marketing immobiliare',
+//   ogImage: '/assets/img/share-website/metodo-immobiliare-website-preview.png',
+// })
 // import { useWindowScroll } from '@vueuse/core';
 
 // const { x, y } = useWindowScroll()
@@ -61,23 +69,5 @@ import AppTestimonianze from './components/AppTestimonianze.vue';
 </template>
 
 <style scoped>
-  /* #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
 
-#myBtn:hover {
-  background-color: #555;
-} */
 </style>
