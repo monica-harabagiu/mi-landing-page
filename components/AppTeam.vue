@@ -1,5 +1,5 @@
 <template>
-    <section id="team-section">
+    <section ref="team" id="team-section">
         <div class="container mx-auto px-4">
 
             <div class="lg:flex">
@@ -38,36 +38,50 @@
 
 <script setup>
 
+    import { onMounted, onUnmounted, ref } from 'vue';
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
     import { useTeamsStore } from '~/store/companyTeam'
     import { useAnimationsStore } from '~/store/gsapAnimations'
-    const { $gsap, $ScrollTrigger } = useNuxtApp()
 
     const teams = useTeamsStore()
     const animation = useAnimationsStore()
 
+    gsap.registerPlugin(ScrollTrigger);
+
+    const team = ref();
+    let ctx;
+
 
     onMounted(() => {
+        ctx = gsap.context((self) => {
+            setTimeout(() => {
 
-        let tlTeam = $gsap.timeline({ force3D: false,
-            scrollTrigger: {
-                trigger: "#team-section",
-                start: "top bottom",
-                end: "bottom",
-                scrub: true,
-                ease: "power2.inOut",
-                // markers: true,
-            },
-        })
+                let tlTeam = gsap.timeline({
+                    force3D: false,
+                    scrollTrigger: {
+                        trigger: "#team-section",
+                        start: "top bottom",
+                        end: "bottom",
+                        scrub: true,
+                        ease: "power2.inOut",
+                        // markers: true,
+                    },
+                })
 
-        tlTeam.from(
-            ".team-box",
-            {
-                y: 200,
-            }
-        )
+                tlTeam.from(
+                    ".team-box",
+                    {
+                        y: 200,
+                    }
+                )
 
-        const singleTeam = $gsap.utils.toArray(".single-team"),
-            loop = animation.horizontalLoop(singleTeam, { repeat: true, speed: 0.5 });
+                const singleTeam = gsap.utils.toArray(".single-team"),
+                    loop = animation.horizontalLoop(singleTeam, { repeat: true, speed: 0.5 });
+
+            }, 1000);
+        }, results.value);
 
     })
 

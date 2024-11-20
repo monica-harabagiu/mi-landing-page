@@ -1,17 +1,17 @@
 <script setup>
 import AppServizi from './components/AppServizi.vue';
 import AppTestimonianze from './components/AppTestimonianze.vue';
-import { useWindowScroll } from '@vueuse/core';
+// import { useWindowScroll } from '@vueuse/core';
 
-const { x, y } = useWindowScroll()
-console.log(x.value)
-y.value = 100
+// const { x, y } = useWindowScroll()
+// console.log(x.value)
+// y.value = 100
 
 
 
-const scrollTop = () => {
-  window.scrollTo(0, 0)
-}
+// const scrollTop = () => {
+//   window.scrollTo(0, 0)
+// }
 
 // const isUserScrolling = (window.scrollY > 20);
 
@@ -45,18 +45,18 @@ const scrollTop = () => {
     <NuxtRouteAnnouncer />
     <AppHeader />
 
-    <NuxtLink :class="{'nav-section-scrolling': y > 100}" id="top-button" class="btn btn-main fixed bottom-5 right-5" @click="scrollTop">Top</NuxtLink>
+    <!-- <NuxtLink :class="{'nav-section-scrolling': y > 100}" id="top-button" class="btn btn-main fixed bottom-5 right-5" @click="scrollTop">Top</NuxtLink> -->
 
     <AppHero />
     <AppAumenta />
-    <!-- <AppRisultati />
+    <AppRisultati />
     <AppServizi />
     <AppTestimonianze />
     <AppTarget />
     <AppCeo />
     <AppTeam />
     <AppCta />
-    <AppFooter /> -->
+    <AppFooter />
   </div>
 </template>
 

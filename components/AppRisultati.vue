@@ -1,5 +1,5 @@
 <template>
-    <section id="results" class="container pt-14 -mt-20 relative mx-auto px-4">
+    <section ref="results" id="results" class="container pt-14 -mt-20 relative mx-auto px-4">
         <h5>Risultati</h5>
         <hr>
 
@@ -9,17 +9,19 @@
         <figure class="results-element-2 absolute right-0 top-60 rotate-45">
             <img src="../assets/img/graphic-elements/hero-element-8.webp" alt="" width="40">
         </figure>
-        
+
 
         <div class="flex flex-col-reverse lg:flex-row lg:gap-52 my-32">
 
             <div class="boxes basis-1/3 lg:ms-20 lg:relative">
-                
-                <div id="box-1"class="result-box top-[270px] lg:top-0 absolute lg:left-0 lg:right-0 left-10 right-10">
+
+                <div id="box-1" class="result-box top-[270px] lg:top-0 absolute lg:left-0 lg:right-0 left-10 right-10">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
-                            <path d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3" stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35" />
+                            <path
+                                d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3"
+                                stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <h6>TI mostreremo:</h6>
                     </div>
@@ -27,25 +29,31 @@
                         Come <span>costruire un sistema</span> di attrazione e profilazione di clienti venditori.
                     </p>
                 </div>
-    
-                <div id="box-2"class="result-box top-[310px] lg:top-[30px] lg:left-0 lg:right-0 left-10 right-10 absolute">
+
+                <div id="box-2"
+                    class="result-box top-[310px] lg:top-[30px] lg:left-0 lg:right-0 left-10 right-10 absolute">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
-                            <path d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3" stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35" />
+                            <path
+                                d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3"
+                                stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <h6>TI mostreremo:</h6>
                     </div>
                     <p>
-                        Come i nostri clienti utilizzano l'<span>online marketing</span> in maniera profittevole.                    
+                        Come i nostri clienti utilizzano l'<span>online marketing</span> in maniera profittevole.
                     </p>
                 </div>
-    
-                <div id="box-3"class="result-box top-[350px] lg:top-[60px] lg:left-0 lg:right-0 left-10 right-10 absolute">
+
+                <div id="box-3"
+                    class="result-box top-[350px] lg:top-[60px] lg:left-0 lg:right-0 left-10 right-10 absolute">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
-                            <path d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3" stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35" />
+                            <path
+                                d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3"
+                                stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <h6>TI mostreremo:</h6>
                     </div>
@@ -53,12 +61,15 @@
                         Le <span>strategie</span> delle agenzie milionarie che crescono di anno in anno.
                     </p>
                 </div>
-    
-                <div id="box-4"class="result-box top-[390px] lg:top-[90px] lg:left-0 lg:right-0 left-10 right-10 absolute">
+
+                <div id="box-4"
+                    class="result-box top-[390px] lg:top-[90px] lg:left-0 lg:right-0 left-10 right-10 absolute">
                     <div class="flex items-center gap-4 mb-8">
                         <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35"/>
-                            <path d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3" stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15" cy="16" r="15" fill="#3DB8D8" fill-opacity="0.35" />
+                            <path
+                                d="M7 15.3833L11.8295 21.5926C11.9925 21.8044 12.2013 21.9765 12.4403 22.0961C12.6792 22.2155 12.9422 22.2793 13.2094 22.2825C13.4722 22.2857 13.7325 22.23 13.9712 22.12C14.2098 22.0097 14.421 21.8477 14.5892 21.6457L29.9976 3"
+                                stroke="#3DB8D8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <h6>TI mostreremo:</h6>
                     </div>
@@ -92,66 +103,78 @@
 
 <script setup>
 
-    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+    import { onMounted, onUnmounted, ref } from 'vue';
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const results = ref();
+    let ctx;
 
     onMounted(() => {
+        ctx = gsap.context((self) => {
+            setTimeout(() => {
 
-        const bottomScreen = window.innerHeight
+                const bottomScreen = window.innerHeight
 
-        let tlBoxes = $gsap.timeline({ force3D: false,
-            scrollTrigger: {
-                trigger: "#results",
-                start: "top",
-                pin: "#results",
-                scrub: true,
-                pinSpacing: true,
-                // markers: true,
-                toggleActions: "restart none restart none"
-            },
-        })
+                let tlBoxes = gsap.timeline({
+                    force3D: false,
+                    scrollTrigger: {
+                        trigger: "#results",
+                        start: "top",
+                        pin: "#results",
+                        scrub: true,
+                        pinSpacing: true,
+                        // markers: true,
+                        toggleActions: "restart none restart none"
+                    },
+                })
 
-        tlBoxes.from(
-            "#box-1",
-            {
-                y: bottomScreen,
-                ease: "Power4.inOut",
-                duration: 500,
-            }
-        )
+                tlBoxes.from(
+                    "#box-1",
+                    {
+                        y: bottomScreen,
+                        ease: "Power4.inOut",
+                        duration: 500,
+                    }
+                )
 
-        tlBoxes.from(
-            "#box-2",
-            {
-                y: bottomScreen,
-                ease: "Power4.inOut",
-                duration: 500,
-            }
-        )
+                tlBoxes.from(
+                    "#box-2",
+                    {
+                        y: bottomScreen,
+                        ease: "Power4.inOut",
+                        duration: 500,
+                    }
+                )
 
-        tlBoxes.from(
-            "#box-3",
-            {
-                y: bottomScreen,
-                ease: "Power4.inOut",
-                duration: 500,
-            }
-        )
+                tlBoxes.from(
+                    "#box-3",
+                    {
+                        y: bottomScreen,
+                        ease: "Power4.inOut",
+                        duration: 500,
+                    }
+                )
 
-        tlBoxes.from(
-            "#box-4",
-            {
-                y: bottomScreen,
-                ease: "Power4.inOut",
-                duration: 500,
-            }
-        )
+                tlBoxes.from(
+                    "#box-4",
+                    {
+                        y: bottomScreen,
+                        ease: "Power4.inOut",
+                        duration: 500,
+                    }
+                )
+
+            }, 1000);
+        }, results.value);
 
     })
 
 </script>
 
 <style scoped>
-
     /* .container {
         height: 100vh;
     } */
@@ -226,5 +249,4 @@
             }
         }
     }
-
 </style>

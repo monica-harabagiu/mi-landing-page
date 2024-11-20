@@ -17,11 +17,11 @@
               <li><a class="menu-link" href="#services-section">Servizi</a></li>
               <li><a class="menu-link" href="#testimonials">Testimonianze</a></li>
               <li><a class="menu-link" href="#ceo-section">Chi Siamo</a></li>
-              <li>
+              <!-- <li>
                 <a href="#">
                   <button class="btn btn-border">Blog</button>
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a href="https://form.typeform.com/to/jd4BaOPX" target="_blank" class="last-button">
                   <button class="btn btn-main">Consulenza gratuita</button>

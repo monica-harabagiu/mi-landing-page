@@ -1,5 +1,5 @@
 <template>
-    <section class="hero text-center py-40 flex flex-col gap-7 relative container mx-auto px-4">
+    <section ref="hero" class="hero text-center py-40 flex flex-col gap-7 relative container mx-auto px-4">
         <h1 class="lg:text-[64px] text-[32px]">
             Scopri le strategie di <br>
             <span>Web Marketing Immobiliare</span>
@@ -39,83 +39,98 @@
 </template>
 
 <script setup>
-    const { $gsap, $ScrollTrigger,} = useNuxtApp()
+    import { onMounted, onUnmounted, ref } from 'vue';
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const hero = ref();
+    let ctx;
 
     onMounted(() => {
+        ctx = gsap.context((self) => {
 
-    setTimeout(() => {
+            setTimeout(() => {
 
-        let tlHero = $gsap.timeline({ force3D: false,
-            scrollTrigger: {
-                trigger: ".hero",
-                start: "top top",
-                end: "bottom top",
-                scrub: true,
-                ease: "sine.inOut",
-                markers: true,
-            },
-        })
+                let tlHero = gsap.timeline({
+                    force3D: false,
+                    scrollTrigger: {
+                        trigger: ".hero",
+                        start: "top top",
+                        end: "bottom top",
+                        scrub: true,
+                        ease: "sine.inOut",
+                        // markers: true,
+                    },
+                })
 
-        tlHero.from(
-            ".element-1",
-            {
-                y: 50,
-                duration: 0.5,
-            }
-        )
-        tlHero.to(
-            ".element-2",
-            {
-                y: 60,
-            },
-            "<"
-        )
-        tlHero.from(
-            ".element-3",
-            {
-                y: 40,
-            },
-            "<"
-        )
-        tlHero.to(
-            ".element-4",
-            {
-                y: 60,
-            },
-            "<"
-        )
-        tlHero.to(
-            ".element-5",
-            {
-                y: 20,
-            },
-            "<"
-        )
-        tlHero.from(
-            ".element-6",
-            {
-                y: 20,
-            },
-            "<"
-        )
-        tlHero.from(
-            ".element-7",
-            {
-                y: 30,
-            },
-            "<"
-        )
-        tlHero.to(
-            ".element-8",
-            {
-                y: 30,
-            },
-            "<"
-        )
+                tlHero.from(
+                    ".element-1",
+                    {
+                        y: 50,
+                        duration: 0.5,
+                    }
+                )
+                tlHero.to(
+                    ".element-2",
+                    {
+                        y: 60,
+                    },
+                    "<"
+                )
+                tlHero.from(
+                    ".element-3",
+                    {
+                        y: 40,
+                    },
+                    "<"
+                )
+                tlHero.to(
+                    ".element-4",
+                    {
+                        y: 60,
+                    },
+                    "<"
+                )
+                tlHero.to(
+                    ".element-5",
+                    {
+                        y: 20,
+                    },
+                    "<"
+                )
+                tlHero.from(
+                    ".element-6",
+                    {
+                        y: 20,
+                    },
+                    "<"
+                )
+                tlHero.from(
+                    ".element-7",
+                    {
+                        y: 30,
+                    },
+                    "<"
+                )
+                tlHero.to(
+                    ".element-8",
+                    {
+                        y: 30,
+                    },
+                    "<"
+                )
 
-    }, 1000)
+            }, 1000)
 
-})
+        }, hero.value)
+
+    })
+
+    onUnmounted(() => {
+        ctx.revert(); // <- Easy Cleanup!
+    });
 </script>
 
 <style scoped>
@@ -131,6 +146,4 @@
         font-size: 18px;
         font-weight: 500;
     }
-
-
 </style>
