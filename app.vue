@@ -2,13 +2,13 @@
 import AppServizi from './components/AppServizi.vue';
 import AppTestimonianze from './components/AppTestimonianze.vue';
 
-// useSeoMeta({
-//   title: 'Metodo Immobiliare',
-//   ogTitle: 'Metodo Immobiliare',
-//   description: 'Scopri le strategie di web marketing immobiliare',
-//   ogDescription: 'Scopri le strategie di web marketing immobiliare',
-//   ogImage: '/assets/img/share-website/metodo-immobiliare-website-preview.png',
-// })
+useSeoMeta({
+  title: 'Metodo Immobiliare',
+  ogTitle: 'Metodo Immobiliare',
+  description: 'Scopri le strategie di web marketing immobiliare',
+  ogDescription: 'Scopri le strategie di web marketing immobiliare',
+  // ogImage: '/assets/img/share-website/metodo-immobiliare-website-preview.png',
+})
 // import { useWindowScroll } from '@vueuse/core';
 
 // const { x, y } = useWindowScroll()
