@@ -99,10 +99,10 @@ nav {
 @media only screen and (max-width: 950px) {
   .menu {
     flex-direction: column;
-    background-color: #151418;
+    background-color: #00101C;
     align-items: start;
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 0;
     width: 100%;
     z-index: 1;
