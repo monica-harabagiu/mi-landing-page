@@ -1,7 +1,7 @@
 <template>
     <section ref="cta" class="cta-section container relative mx-auto px-4">
         <figure class="absolute element-1 z-10">
-            <img src="../assets/img/graphic-elements/cta-element-1.webp" alt="" width="150">
+            <img src="../assets/img/graphic-elements/cta-element-1.webp" alt="nuvoletta-messaggio" width="150">
         </figure>
         <div class="cta-box lg:flex overflow-hidden gap-20 items-center mb-32 relative flex-row-reverse">
             <div class="left-image lg:absolute lg:top-0 lg:bottom-0 lg:left-0 lg:w-[45%] lg:h-full h-[400px]">

@@ -6,7 +6,7 @@
             <div class="logo">
               <NuxtLink to="/">
                 <figure>
-                  <img src="../assets/img/metodo-immobiliare-logo-white.png" alt="metodo-immobiliare-logo-white" width="150">
+                  <img src="../assets/img/metodo-immobiliare-logo-white.png" alt="metodo-immobiliare-logo-bianco" width="150">
                 </figure>
               </NuxtLink>
             </div>

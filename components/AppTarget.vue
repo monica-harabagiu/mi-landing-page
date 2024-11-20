@@ -19,7 +19,7 @@
         <div class="targets lg:flex lg:mt-6 mt-16 gap-20">
             <div class="single-target basis-1/3">
                 <figure>
-                    <img src="../assets/img/graphic-elements/target-element-1.webp" alt="">
+                    <img src="../assets/img/graphic-elements/target-element-1.webp" alt="illustrazione-con-agente-su-piedistallo">
                 </figure>
                 <h4>Consulenti Immobiliari</h4>
                 <span>
@@ -31,7 +31,7 @@
 
             <div class="single-target basis-1/3">
                 <figure>
-                    <img src="../assets/img/graphic-elements/target-element-2.webp" alt="">
+                    <img src="../assets/img/graphic-elements/target-element-2.webp" alt="illustrazione-casa">
                 </figure>
                 <h4>Agenzie Immobiliari</h4>
                 <span>
@@ -43,7 +43,7 @@
 
             <div class="single-target basis-1/3">
                 <figure>
-                    <img src="../assets/img/graphic-elements/target-element-3.webp" alt="">
+                    <img src="../assets/img/graphic-elements/target-element-3.webp" alt="illustrazione-moneta-euro">
                 </figure>
                 <h4>Investitori Immobiliari</h4>
                 <span>

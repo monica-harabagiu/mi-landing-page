@@ -21,7 +21,7 @@
         <div class="services lg:flex lg:mt-6 mt-16 gap-20">
             <div class="single-service service-1 basis-1/3">
                 <figure>
-                    <img src="../assets/img/graphic-elements/services-element-1.webp" alt="">
+                    <img src="../assets/img/graphic-elements/services-element-1.webp" alt="illustrazione-con-razzo-e-bersagli">
                 </figure>
                 <h4>Incrementa le acquisizioni e le vendite</h4>
                 <span>Ottieni immediatamente un metodo testato e continuativo per ricevere notizie profilate</span>
@@ -29,7 +29,7 @@
 
             <div class="single-service basis-1/3">
                 <figure>
-                    <img src="../assets/img/graphic-elements/services-element-2.webp" alt="">
+                    <img src="../assets/img/graphic-elements/services-element-2.webp" alt="illustrazione-con-computer-e-statistiche">
                 </figure>
                 <h4>Migliora il tuo posizionamento online</h4>
                 <span>Utilizza strategie di marketing mirate e focalizzate per migliorare il tuo posizionamento online e
@@ -38,7 +38,7 @@
 
             <div class="single-service basis-1/3">
                 <figure>
-                    <img src="../assets/img/graphic-elements/services-element-3.webp" alt="">
+                    <img src="../assets/img/graphic-elements/services-element-3.webp" alt="illustrazione-con-candidati">
                 </figure>
                 <h4>Recruiting</h4>
                 <span>Attrai candidati interessati a intraprendere un nuovo percorso professionale nel settore

@@ -4,10 +4,10 @@
         <hr>
 
         <figure class="results-element-1 absolute right-10">
-            <img src="../assets/img/graphic-elements/result-element-1.webp" alt="" width="70">
+            <img src="../assets/img/graphic-elements/result-element-1.webp" alt="illustrazione-post-social-con-stella" width="70">
         </figure>
         <figure class="results-element-2 absolute right-0 top-60 rotate-45">
-            <img src="../assets/img/graphic-elements/hero-element-8.webp" alt="" width="40">
+            <img src="../assets/img/graphic-elements/hero-element-8.webp" alt="elemento-grafico-con-tre-quadratini-e-un-cerchio" width="40">
         </figure>
 
 

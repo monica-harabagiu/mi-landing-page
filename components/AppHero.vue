@@ -12,28 +12,28 @@
         </a>
 
         <figure class="hidden lg:block absolute element-1 top-5 left-20">
-            <img src="../assets/img/graphic-elements/hero-element-1.webp" alt="" width="220">
+            <img src="../assets/img/graphic-elements/hero-element-1.webp" alt="illustrazione-post-pin-di-posizione" width="220">
         </figure>
         <figure class="hidden lg:block absolute element-2 top-24 right-0">
-            <img src="../assets/img/graphic-elements/hero-element-2.webp" alt="" width="220">
+            <img src="../assets/img/graphic-elements/hero-element-2.webp" alt="icona-messaggio" width="220">
         </figure>
         <figure class="hidden lg:block absolute element-3 bottom-0 right-72">
-            <img src="../assets/img/graphic-elements/hero-element-3.webp" alt="" width="250">
+            <img src="../assets/img/graphic-elements/hero-element-3.webp" alt="illustrazione-modifica-testo" width="250">
         </figure>
         <figure class="hidden lg:block absolute element-4 bottom-32 left-[300px]">
-            <img src="../assets/img/graphic-elements/hero-element-4.webp" alt="" width="80">
+            <img src="../assets/img/graphic-elements/hero-element-4.webp" alt="illustrazione-post-con-mi-piace" width="80">
         </figure>
         <figure class="hidden lg:block absolute element-5 bottom-32 right-32">
-            <img src="../assets/img/graphic-elements/hero-element-5.webp" alt="" width="20">
+            <img src="../assets/img/graphic-elements/hero-element-5.webp" alt="icon-instagram" width="20">
         </figure>
         <figure class="hidden lg:block absolute element-6 bottom-0 left-40">
-            <img src="../assets/img/graphic-elements/hero-element-6.webp" alt="" width="50">
+            <img src="../assets/img/graphic-elements/hero-element-6.webp" alt="cerchio-con-gradiente" width="50">
         </figure>
         <figure class="hidden lg:block absolute element-7 bottom-52 left-32">
-            <img src="../assets/img/graphic-elements/hero-element-7.webp" alt="" width="10">
+            <img src="../assets/img/graphic-elements/hero-element-7.webp" alt="elemento-grafico-con-due-quadratini" width="10">
         </figure>
         <figure class="hidden lg:block absolute element-8 bottom-60 right-60">
-            <img src="../assets/img/graphic-elements/hero-element-8.webp" alt="" width="30">
+            <img src="../assets/img/graphic-elements/hero-element-8.webp" alt="elemento-grafico-con-tre-quadratini-e-un-cerchio" width="30">
         </figure>
     </section>
 </template>

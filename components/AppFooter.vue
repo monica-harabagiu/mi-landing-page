@@ -5,7 +5,7 @@
                 <div class="up-footer flex flex-col gap-7 lg:flex-row lg:justify-between ">
                     <div class="up-left flex flex-col items-center lg:items-start">
                         <figure>
-                            <img src="../assets/img/metodo-immobiliare-logo-white.png" alt="metodo-immobiliare-logo-white" width="150">
+                            <img src="../assets/img/metodo-immobiliare-logo-white.png" alt="metodo-immobiliare-logo-bianco" width="150">
                         </figure>
                         <div class="social-links flex gap-3 mt-7">
                             <a href="https://www.facebook.com/metodoimmobiliare/?locale=it_IT" target="_blank" class="facebook-icon">
