@@ -1,6 +1,6 @@
 <script setup>
-import AppServizi from './components/AppServizi.vue';
-import AppTestimonianze from './components/AppTestimonianze.vue';
+// import AppServizi from '../components/AppServizi.vue';
+// import AppTestimonianze from '../components/AppTestimonianze.vue';
 
 useSeoMeta({
   title: 'Metodo Immobiliare',
@@ -50,7 +50,6 @@ useSeoMeta({
 
 <template>
   <div>
-    <NuxtRouteAnnouncer />
     <AppHeader />
 
     <!-- <NuxtLink :class="{'nav-section-scrolling': y > 100}" id="top-button" class="btn btn-main fixed bottom-5 right-5" @click="scrollTop">Top</NuxtLink> -->

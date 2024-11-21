@@ -16,6 +16,11 @@ export default defineNuxtConfig({
   //     prerender: false
   //   }
   // },
+  // nitro:  {
+  //   prerender: {
+  //     failOnError: false,
+  //   }
+  // },
   app: {
     head: {
       charset: 'utf-8',
