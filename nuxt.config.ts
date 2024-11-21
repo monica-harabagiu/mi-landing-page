@@ -7,15 +7,15 @@ export default defineNuxtConfig({
     '@/assets/main.scss'
   ],
   ssr: true,
-  nitro: {
-    baseURL: 'https://metodoimmobiliare.com/landing',
-    preset: 'node-server'
-  },
-  routeRules: {
-    "/": {
-      prerender: false
-    }
-  },
+  // nitro: {
+  //   baseURL: 'https://metodoimmobiliare.com/landing',
+  //   preset: 'node-server'
+  // },
+  // routeRules: {
+  //   "/": {
+  //     prerender: false
+  //   }
+  // },
   app: {
     head: {
       charset: 'utf-8',
