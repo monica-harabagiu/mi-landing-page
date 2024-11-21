@@ -3,10 +3,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
   modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@hypernym/nuxt-gsap'],
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },
   css: [
     '@/assets/main.scss'
   ],
-  ssr: true,
   // nitro: {
   //   baseURL: 'https://metodoimmobiliare.com/landing',
   //   preset: 'node-server'

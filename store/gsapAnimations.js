@@ -1,11 +1,13 @@
 import { defineStore } from 'pinia'
-const { $gsap, $ScrollTrigger } = useNuxtApp()
+
 
 
 export const useAnimationsStore = defineStore({
     id: "animations",
     actions: {
         horizontalLoop(items, config) {
+            const { $gsap } = useNuxtApp()
+
             items = $gsap.utils.toArray(items);
             config = config || {};
             let tl = $gsap.timeline({

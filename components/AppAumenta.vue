@@ -37,7 +37,9 @@
     const animation = useAnimationsStore()
 
     import { onMounted, onUnmounted, ref } from 'vue';
-    const { $gsap, $ScrollTrigger } = useNuxtApp()
+    const { $gsap, $ScrollTrigger, $animation } = useNuxtApp()
+
+    $gsap.registerPlugin($ScrollTrigger);
     
     
     const aumenta = ref();
