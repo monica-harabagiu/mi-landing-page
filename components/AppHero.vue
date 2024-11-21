@@ -40,20 +40,17 @@
 
 <script setup>
     import { onMounted, onUnmounted, ref } from 'vue';
-    import gsap from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-    gsap.registerPlugin(ScrollTrigger);
+    const { $gsap, $ScrollTrigger } = useNuxtApp()
 
     const hero = ref();
     let ctx;
 
     onMounted(() => {
-        ctx = gsap.context((self) => {
+        ctx = $gsap.context((self) => {
 
             setTimeout(() => {
 
-                let tlHero = gsap.timeline({
+                let tlHero = $gsap.timeline({
                     force3D: false,
                     scrollTrigger: {
                         trigger: ".hero",

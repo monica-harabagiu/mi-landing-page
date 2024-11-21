@@ -52,19 +52,16 @@
 <script setup>
 
     import { onMounted, onUnmounted, ref } from 'vue';
-    import gsap from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-    gsap.registerPlugin(ScrollTrigger);
+    const { $gsap, $ScrollTrigger } = useNuxtApp()
 
     const services = ref();
     let ctx;
 
     onMounted(() => {
-        ctx = gsap.context((self) => {
+        ctx = $gsap.context((self) => {
             setTimeout(() => {
 
-                let tlServices = gsap.timeline({
+                let tlServices = $gsap.timeline({
                     force3D: false,
                     scrollTrigger: {
                         trigger: ".services-intro",

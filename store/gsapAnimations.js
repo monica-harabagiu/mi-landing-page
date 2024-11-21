@@ -1,14 +1,14 @@
 import { defineStore } from 'pinia'
-import gsap from 'gsap';
+const { $gsap, $ScrollTrigger } = useNuxtApp()
 
 
 export const useAnimationsStore = defineStore({
     id: "animations",
     actions: {
         horizontalLoop(items, config) {
-            items = gsap.utils.toArray(items);
+            items = $gsap.utils.toArray(items);
             config = config || {};
-            let tl = gsap.timeline({
+            let tl = $gsap.timeline({
                 repeat: config.repeat,
                 paused: config.paused,
                 defaults: { ease: "none" },
@@ -21,38 +21,38 @@ export const useAnimationsStore = defineStore({
                 xPercents = [],
                 curIndex = 0,
                 pixelsPerSecond = (config.speed || 1) * 100,
-                snap = config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
+                snap = config.snap === false ? (v) => v : $gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
                 totalWidth,
                 curX,
                 distanceToStart,
                 distanceToLoop,
                 item,
                 i;
-            gsap.set(items, {
+            $gsap.set(items, {
                 // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
                 xPercent: (i, el) => {
-                    let w = (widths[i] = parseFloat(gsap.getProperty(el, "width", "px")));
+                    let w = (widths[i] = parseFloat($gsap.getProperty(el, "width", "px")));
                     xPercents[i] = snap(
-                        (parseFloat(gsap.getProperty(el, "x", "px")) / w) * 100 +
-                        gsap.getProperty(el, "xPercent")
+                        (parseFloat($gsap.getProperty(el, "x", "px")) / w) * 100 +
+                        $gsap.getProperty(el, "xPercent")
                     );
                     return xPercents[i];
                 },
             });
-            gsap.set(items, { x: 0 });
+            $gsap.set(items, { x: 0 });
             totalWidth =
                 items[length - 1].offsetLeft +
                 (xPercents[length - 1] / 100) * widths[length - 1] -
                 startX +
                 items[length - 1].offsetWidth *
-                gsap.getProperty(items[length - 1], "scaleX") +
+                $gsap.getProperty(items[length - 1], "scaleX") +
                 (parseFloat(config.paddingRight) || 0);
             for (i = 0; i < length; i++) {
                 item = items[i];
                 curX = (xPercents[i] / 100) * widths[i];
                 distanceToStart = item.offsetLeft + curX - startX;
                 distanceToLoop =
-                    distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+                    distanceToStart + widths[i] * $gsap.getProperty(item, "scaleX");
                 tl.to(
                     item,
                     {
@@ -83,11 +83,11 @@ export const useAnimationsStore = defineStore({
                 vars = vars || {};
                 Math.abs(index - curIndex) > length / 2 &&
                     (index += index > curIndex ? -length : length); // always go in the shortest direction
-                let newIndex = gsap.utils.wrap(0, length, index),
+                let newIndex = $gsap.utils.wrap(0, length, index),
                     time = times[newIndex];
                 if (time > tl.time() !== index > curIndex) {
                     // if we're wrapping the timeline's playhead, make the proper adjustments
-                    vars.modifiers = { time: gsap.utils.wrap(0, tl.duration()) };
+                    vars.modifiers = { time: $gsap.utils.wrap(0, tl.duration()) };
                     time += tl.duration() * (index > curIndex ? 1 : -1);
                 }
                 curIndex = newIndex;

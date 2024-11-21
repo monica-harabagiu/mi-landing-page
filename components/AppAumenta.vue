@@ -37,18 +37,16 @@
     const animation = useAnimationsStore()
 
     import { onMounted, onUnmounted, ref } from 'vue';
-    import gsap from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    const { $gsap, $ScrollTrigger } = useNuxtApp()
     
-    gsap.registerPlugin(ScrollTrigger);
     
     const aumenta = ref();
     let ctx;
     
     onMounted(() => {
-      ctx = gsap.context((self) => {
+      ctx = $gsap.context((self) => {
         setTimeout(() => {
-          let tl = gsap.timeline({
+          let tl = $gsap.timeline({
             force3D: false,
             scrollTrigger: {
               trigger: '.slide1',
@@ -103,7 +101,7 @@
             opacity: 0,
           });
     
-          let tl2 = gsap.timeline({
+          let tl2 = $gsap.timeline({
             force3D: false,
             scrollTrigger: {
               trigger: '.slide-finale',
@@ -119,7 +117,7 @@
             display: 'none',
           });
     
-          const singleLogo = gsap.utils.toArray('.single-logo'),
+          const singleLogo = $gsap.utils.toArray('.single-logo'),
             loop = animation.horizontalLoop(singleLogo, {
               repeat: true,
               speed: 0.5,

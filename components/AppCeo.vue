@@ -57,19 +57,16 @@
 <script setup>
 
     import { onMounted, onUnmounted, ref } from 'vue';
-    import gsap from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-    gsap.registerPlugin(ScrollTrigger);
+    const { $gsap, $ScrollTrigger } = useNuxtApp()
 
     const ceo = ref();
     let ctx;
 
     onMounted(() => {
-        ctx = gsap.context((self) => {
+        ctx = $gsap.context((self) => {
             setTimeout(() => {
 
-                let tlCeo = gsap.timeline({
+                let tlCeo = $gsap.timeline({
                     force3D: false,
                     scrollTrigger: {
                         trigger: "#ceo-section",
