@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   css: [
     '@/assets/main.scss'
   ],
+  ssr: true,
+  nitro: {
+    preset: 'node-server'
+  },
   vite: {
     css: {
       preprocessorOptions: {
