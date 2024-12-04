@@ -15,7 +15,7 @@
             <ul class="menu">
               <li><a class="menu-link" href="#results">Risultati</a></li>
               <li><a class="menu-link" href="#services-section">Servizi</a></li>
-              <li><a class="menu-link" href="#testimonials">Testimonianze</a></li>
+              <li><a class="menu-link" href="https://metodoimmobiliare.com/recensioni-clienti/" target="_blank">Testimonianze</a></li>
               <li><a class="menu-link" href="#ceo-section">Chi Siamo</a></li>
               <!-- <li>
                 <a href="#">

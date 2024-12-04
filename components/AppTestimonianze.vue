@@ -1,6 +1,6 @@
 <template>
     <section ref="testimonials" id="testimonials"
-        class="testimonials-section container flex mx-auto px-4 flex-col lg:justify-center relative mt-40 h-lvh lg:p-0 pt-32 overflow-hidden lg:overflow-visible">
+        class="testimonials-section container flex mx-auto px-4 flex-col lg:justify-center relative mt-40 h-lvh lg:p-0 pt-32 overflow-hidden lg:overflow-visible lg:mb-[300px]">
 
         <!-- <figure class="absolute element-1">
             <img src="../assets/img/graphic-elements/testimonials-element-1.webp" alt="" width="100">
@@ -159,6 +159,12 @@
                 </div>
             </div>
 
+        </div>
+        
+        <div class="absolute left-[50%] translate-x-[-50%] lg:-bottom-20 bottom-0">
+            <a href="https://metodoimmobiliare.com/recensioni-clienti/" target="_blank">
+                <button class="btn btn-main">Guarda tutte le testimonianze</button>
+            </a>
         </div>
 
     </section>
