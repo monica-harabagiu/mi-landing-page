@@ -1,5 +1,5 @@
 <template>
-    <section ref="results" id="results" class="container pt-14 -mt-48 relative mx-auto px-4">
+    <section ref="results" id="results" class="container pt-14 -mt-72 relative mx-auto px-4">
         <h5>Risultati</h5>
         <hr>
 

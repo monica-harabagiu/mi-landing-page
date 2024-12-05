@@ -2,7 +2,7 @@
     <section ref="team" id="team-section">
         <div class="container mx-auto px-4">
 
-            <div class="lg:flex">
+            <div class="lg:flex lg:gap-28">
                 <div class="basis-1/2">
                     <h2 class="text-[35px] lg:text-[40px]">Giovani, smart e determinati</h2>
                     <p class="text-[15px] lg:text-[18px]">
@@ -15,6 +15,10 @@
                         creare asset brandizzati, offrendo una vasta gamma di servizi mirati per curare l'immagine del
                         cliente portandogli incarichi.
                     </p>
+                </div>
+
+                <div class="overflow-hidden box-video width-[560px]">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_-tjGmnf1TA?si=DLiwgEDRI-WBby1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -103,6 +107,11 @@
 
         p {
             margin-bottom: 20px;
+        }
+
+        .box-video {
+            border: 2px solid #3DB8D8;
+            border-radius: 15px;
         }
 
         .team-box {
