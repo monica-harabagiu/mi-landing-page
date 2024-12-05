@@ -2,13 +2,13 @@
     <section ref="ceo" id="ceo-section" class="mt-80 mx-auto px-4">
         <div class="container lg:flex py-20 mx-auto px-4">
             <div class="basis-1/2 flex justify-center relative">
-                <figure class="lg:mx-[150px]">
-                    <img src="../assets/img/gianluca-sgambati-ceo-2.webp" alt="metodo-immobiliare-gianluca-sgambati-ceo">
+                <figure class="lg:mx-[100px]">
+                    <img src="../assets/img/gianluca-sgambati-ceo-4.webp" alt="metodo-immobiliare-gianluca-sgambati-ceo">
                 </figure>
-                <div class="name-tag absolute bottom-[-5%] right-[-5%] lg:right-[15%]">
+                <!-- <div class="name-tag absolute bottom-[-5%] right-[-5%] lg:right-[15%]">
                     <h6>Gianluca Sgambati</h6>
                     <span>CEO & Founder</span>
-                </div>
+                </div> -->
                 <!-- <div class="ceo-card relative -mt-40 px-1 py-4 lg:pt-7 w-5/6 flex flex-col">
                     <figure>
                         <img src="../assets/img/gianluca-sgambati-ceo-3.webp" alt="metodo-immobiliare-gianluca-sgambati-ceo">
@@ -95,7 +95,7 @@
     section {
         background-color: #AEEEFE;
 
-        .ceo-card {
+        /* .ceo-card {
             background-color: #00101C;
             border: 4px solid #3DB8D8;
             border-radius: 24px;
@@ -117,7 +117,7 @@
             span {
                 font-size: 14px;
             }
-        }
+        } */
 
         .right-half {
 
