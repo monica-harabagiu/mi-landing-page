@@ -56,38 +56,38 @@
 
 <script setup>
 
-    import { onMounted, onUnmounted, ref } from 'vue';
-    const { $gsap, $ScrollTrigger } = useNuxtApp()
+    // import { onMounted, onUnmounted, ref } from 'vue';
+    // const { $gsap, $ScrollTrigger } = useNuxtApp()
 
-    const ceo = ref();
-    let ctx;
+    // const ceo = ref();
+    // let ctx;
 
-    onMounted(() => {
-        ctx = $gsap.context((self) => {
-            setTimeout(() => {
+    // onMounted(() => {
+    //     ctx = $gsap.context((self) => {
+    //         setTimeout(() => {
 
-                let tlCeo = $gsap.timeline({
-                    force3D: false,
-                    scrollTrigger: {
-                        trigger: "#ceo-section",
-                        start: "top bottom",
-                        end: "bottom",
-                        scrub: true,
-                        ease: "power2.inOut",
-                        // markers: true,
-                    },
-                })
+    //             let tlCeo = $gsap.timeline({
+    //                 force3D: false,
+    //                 scrollTrigger: {
+    //                     trigger: "#ceo-section",
+    //                     start: "top bottom",
+    //                     end: "bottom",
+    //                     scrub: true,
+    //                     ease: "power2.inOut",
+    //                     // markers: true,
+    //                 },
+    //             })
 
-                tlCeo.from(
-                    ".name-tag",
-                    {
-                        y: 100,
-                    }
-                )
+    //             tlCeo.from(
+    //                 ".name-tag",
+    //                 {
+    //                     y: 100,
+    //                 }
+    //             )
 
-            }, 1000);
-        }, ceo.value);
-    })
+    //         }, 1000);
+    //     }, ceo.value);
+    // })
 
 </script>
 
