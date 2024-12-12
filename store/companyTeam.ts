@@ -3,57 +3,57 @@ import { defineStore } from 'pinia'
 export const useTeamsStore = defineStore('teams', () => {
     let companyTeam = [
         {
-            "alt": "metodo-immobiliare-andrea-audisio",
-            "src": "metodo-immobiliare-andrea-audisio.webp",
-            "name": "Andrea Audisio",
+            "alt": "metodo-immobiliare-andrea",
+            "src": "metodo-immobiliare-andrea.webp",
+            "name": "Andrea",
             "role": "Direttore Operativo"
         },
         {
-            "alt": "metodo-immobiliare-stefano-solieri",
-            "src": "metodo-immobiliare-stefano-solieri.webp",
-            "name": "Stefano Solieri",
+            "alt": "metodo-immobiliare-stefano",
+            "src": "metodo-immobiliare-stefano.webp",
+            "name": "Stefano",
             "role": "CRM Specialist"
         },
         {
-            "alt": "metodo-immobiliare-aurora-puglisi",
-            "src": "metodo-immobiliare-aurora-puglisi.webp",
-            "name": "Aurora Puglisi",
+            "alt": "metodo-immobiliare-aurora",
+            "src": "metodo-immobiliare-aurora.webp",
+            "name": "Aurora",
             "role": "Project Manager"
         },
         {
-            "alt": "metodo-immobiliare-rosa-romano",
-            "src": "metodo-immobiliare-rosa-romano.webp",
-            "name": "Rosa Romano",
+            "alt": "metodo-immobiliare-rosa",
+            "src": "metodo-immobiliare-rosa.webp",
+            "name": "Rosa",
             "role": "Amministrazione"
         },
         {
-            "alt": "metodo-immobiliare-alessandro-todeschino",
-            "src": "metodo-immobiliare-alessandro-todeschino.webp",
-            "name": "Alessandro Todeschino",
+            "alt": "metodo-immobiliare-alessandro",
+            "src": "metodo-immobiliare-alessandro.webp",
+            "name": "Alessandro",
             "role": "Direttore Commerciale"
         },
         {
-            "alt": "metodo-immobiliare-lorenzo-favre",
-            "src": "metodo-immobiliare-lorenzo-favre.webp",
-            "name": "Lorenzo Favre",
+            "alt": "metodo-immobiliare-lorenzo",
+            "src": "metodo-immobiliare-lorenzo.webp",
+            "name": "Lorenzo",
             "role": "Advertising Specialist"
         },
         {
-            "alt": "metodo-immobiliare-gianluca-mancin",
-            "src": "metodo-immobiliare-gianluca-mancin.webp",
-            "name": "Gianluca Mancin",
+            "alt": "metodo-immobiliare-gianluca",
+            "src": "metodo-immobiliare-gianluca.webp",
+            "name": "Gianluca",
             "role": "Advertising Specialist"
         },
         {
-            "alt": "metodo-immobiliare-monica-harabagiu",
-            "src": "metodo-immobiliare-monica-harabagiu.webp",
-            "name": "Monica Harabagiu",
+            "alt": "metodo-immobiliare-monica",
+            "src": "metodo-immobiliare-monica.webp",
+            "name": "Monica",
             "role": "Graphic e Web Designer"
         },
         {
-            "alt": "metodo-immobiliare-rosalba-cardile",
-            "src": "metodo-immobiliare-rosalba-cardile.webp",
-            "name": "Rosalba Cardile",
+            "alt": "metodo-immobiliare-rosalba",
+            "src": "metodo-immobiliare-rosalba.webp",
+            "name": "Rosalba",
             "role": "Social Media Manager"
         },
         {
