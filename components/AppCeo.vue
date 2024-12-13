@@ -48,6 +48,20 @@
                 <p class="text-[15px] lg:text-[18px]">
                     Trasformare il <span class="font-bold">mercato immobiliare</span>, rendendolo <span class="font-bold">più efficiente e trasparente</span>, creando nuove opportunità di crescita per i nostri partner e offrendo un servizio di eccellenza.
                 </p>
+                <h4 class="text-[15px] lg:text-[18px] font-bold mt-7">Sono apparso su:</h4>
+                <div class="flex mt-3">
+                    <div class="basis-1/2">
+                        <figure>
+                            <img src="../assets/img/metodo-immobiiliare-la-repubblica-articolo.png" alt="La Repubblica" width="300">
+                        </figure>
+                        <a href="https://roma.repubblica.it/dossier-adv/eccellenze-lazio/2021/10/08/news/metodo_immobiliare_svolta_digitale_per_trovare_case_da_vendere-321185164/" target="_blank" class="underline decoration-solid">Leggi l'articolo &#10230;</a>
+                    </div>
+                    <div class="basis-1/2">
+                        <figure>
+                            <img src="../assets/img/metodo-immobiiliare-metro-articolo.png" alt="La Repubblica" width="300">
+                        </figure>
+                    </div>
+                </div>
             </div>
 
         </div>
