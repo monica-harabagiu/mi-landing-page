@@ -57,6 +57,18 @@ export const useTeamsStore = defineStore('teams', () => {
             "role": "Social Media Manager"
         },
         {
+            "alt": "metodo-immobiliare-andrea-s",
+            "src": "metodo-immobiliare-andrea-s.webp",
+            "name": "Andrea",
+            "role": "Sales Account"
+        },
+        {
+            "alt": "metodo-immobiliare-olga",
+            "src": "metodo-immobiliare-olga.webp",
+            "name": "Olga",
+            "role": "BDR"
+        },
+        {
             "alt": "metodo-immobiliare-alessia-e-alessandro",
             "src": "metodo-immobiliare-alessia-e-alessandro.webp",
             "name": "Alessia e Alessandro",
