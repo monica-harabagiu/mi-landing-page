@@ -82,6 +82,7 @@
                 <div class="bottom-footer flex justify-between">
                     <div>
                         <span>P.IVA: 12589540017</span> |
+                        <span> Capitale Sociale: €25.000</span> |
                         <a href="https://www.iubenda.com/privacy-policy/16426516" target="_blank">Cookie Policy</a> |
                         <a href="https://www.iubenda.com/privacy-policy/16426516/cookie-policy" target="_blank">Privacy
                             Policy</a>
